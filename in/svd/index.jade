@@ -157,7 +157,7 @@ p The example above should demonstrate some applicability of SVD. The mathematic
 
 
 h2 Code
-c.
+c.matlab.
   clear all
 
   Img = imread('Monkey Selfie.jpg');
@@ -196,7 +196,7 @@ c.
   	Mod_Img_thin = cat(3,Mod_red_thin,Mod_green_thin,Mod_blue_thin);
   	imshow(Mod_Img_thin)
   end
-c.
+c.matlab.
   clear all
   Img = imread('Monkey Selfie.jpg');
   Img = im2double(Img);
@@ -222,7 +222,7 @@ c.
   end
 
   plot(CompRatio,RemainRatio)
-c.
+c.matlab.
   function Approx_S = Mod_Matrix(S,r)
     Sigmas = diag(S);
     Length_sigmas = length(Sigmas);

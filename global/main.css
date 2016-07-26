@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+  height: 0.2rem;
+  width: 0.4rem; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #9b4eca; }
+
+.date {
+  color: #9b4eca; }
+
+img {
+  width: 100%; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -441,11 +454,8 @@ li {
   margin-bottom: 1.0rem; }
 
 .MathJax_SVG_Display {
-  overflow: hidden; }
-
-.iScrollIndicator {
-  background: #9b4eca;
-  height: 0.15rem; }
+  overflow: scroll;
+  font: Helvetica; }
 
 .button,
 button {
@@ -471,17 +481,14 @@ form {
 table {
   width: 100%; }
 
+caption {
+  color: #9b4eca; }
+
 th,
 td {
   border-bottom: .1rem solid #e1e1e1;
   padding: 1.2rem 1.5rem;
   text-align: left; }
-  th:first-child,
-  td:first-child {
-    padding-left: 0; }
-  th:last-child,
-  td:last-child {
-    padding-right: 0; }
 
 p {
   margin-top: 0; }
