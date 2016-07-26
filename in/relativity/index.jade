@@ -1,0 +1,177 @@
+
+h1 Relativity
+
+
+//- interactive diagram
+
+comm
+  p This article is ...
+
+
+h2 Finding a little problem
+p In 1887 the Michelson-Morley experiment unexpectedly showed that light travels with the same speed regardless of the observer's position or velocity. This idea of constancy of the speed of light presented a problem for physics. Consider a scenario from the perspective of Observer-1. Observer-1, Observer-2, and a beam of light all begin at time zero at position zero. Observer-2 then moves in a straight line with velocity [v\geq 0] relative to Observer-1. At the same time, the light beam moves in the same direction as Observer-2, as illustrated in _Figure 1_.
+//- svg of stuff, figure 1
+p The light beam will move at the speed of light, [c], relative to Observer-1. But due to the constancy of the speed of light, the light beam must also move at speed [c] relative to Observer-2. How can light move at the same speed relative to two observers when those observers are moving relative to each other?
+
+
+h2 Exploring the problem
+p In this article, we seek a solution for the above seemingly paradoxical scenario. A solution is an answer that describes how the scenario is possible provided the solution meets the three scenario conditions:
+ul
+  li: p Light moves relative to Observer-1 with velocity [c\gt 0].
+  li: p Light moves relative to Observer-2 with velocity [c\gt 0].
+  li: p Observer-2 move relative to Observer-1 with velocity [0\leq v\lt c].
+p The scenario considers only one dimension of space. A solution for the scenario of one-dimensional space, however, also presents a solution for scenarios of two-dimensional or three-dimensional space. To resolve the seeming paradox introduced by the constancy of light, we need solve only the one-dimensional case.
+p As we seek a solution for the one-dimensional case it is helpful to formalize the scenario with a cartesion graph. Suppose the graph below represents the reference frame of Observer-1; _light_ is the yellow line representing the beam; _Ob-2_ is the torquoise line representing Observer-2. The velocity of the beam relative to Observer-1 is the slope of _light_ relative to the [t]-axis; the velocity of Observer-2 relative to Observer-1 is the slope of _Ob-2_ relative to the [x]-axis. We must remember that due to the constancy of light, the velocity of light relative to Observer-2 must be equal to the velocity of light relative to Observer-1. That is, the slope of _light_ relative to _Ob-2_ must be equal to the slope of _light_ relative to the [t]-axis. With _Ob-2_ at a different angle than the [t]-axis, satisfying this equality is seemingly impossible.
+//- put graph next to above paragraph, figure 2
+p To resolve this conflict we must examine and reconsider our assumptions. Some important assumptions are...
+ul
+  li: p The dimensions of our world come in two types, space and time, each measured with separate units.
+  li: p Homogeneity: all points in space are equal and all points in time are equal. No point in space or time is special. 
+  li: p If the velocity of Observer-1 relative to Observer-2 is equal in magnitude and opposite in direction to the velocity of Observer-2 relative to Observer-1.
+  li: p Observer-1 and Observer-2 experience changes in time and changes in space in the same way, regardless of their different positions in time or space.
+p The first two assumptions are fundamental enough we will leave them untouched. Questioning the third assumption presents challenges for macro-scale Newtonian mechanics. Suppose we retain the first three assumptions but drop the fourth. At the turn of the 20th century Einstein dropped the fourth assumption and came to develop his theory of special relativity. We will attempt to arrive at similar conclusions as Einstein by a mathematical derivation.
+p We continue to seek a solution to our scenario but with a modification: the two observers no longer necessarily experience the same changes in space or time. The changes we will subsequently call `displacements`. Observer-1 experiences displacements in time and space as [\delta t] and [\delta x] respectively, while Observer-2 experiences displacements in time and space as [\delta t'] (pronounced delta [t] prime) and [\delta x'] respectively. The two variables of time and space may have completely different behaviors for the two observers. In the case of the graph, the differences of these variables means the coordinate system for Observer-2 may differ from the coordinate system for Observer-1. Our solution will describe how the two coordinate systems relate to each other. If the observers have different coordinate systems it is not hard to imagine that, for some particular relationship of the coordinate systems, meeting the three scenario conditions will no longer seem impossible.
+
+
+h2 Some clarifications
+p We would like our solution to generalize such that the light beam in _Figure 1_ is not necessarily a light beam but `any` object. Instead of using the name 'light beam' we will now use the name 'object' to reflect that the third block in _Figure 1_ could be any object, including a light beam. We must seek a solution appropriate for both light-like objects and non-light-like objects.
+p What exactly are these displacements ([\delta]s) in time and space? A time displacement is the difference of two points in time. What two points in time? For our scenario we can choose any two points in time, such as [\delta t = t_2 - t_1 = 5 - 3]. During those two points in time, the object travels between two points in space. The difference of those two points in space is the space displacement. Once a time displacement is selected a space displacement follows. Likewise, if a space displacement is selected, a time displacement follows. The displacements [(\delta t,\delta x)] represent a time change and the corresponding distance moved by the object relative to Observer-1; the displacements [(\delta t',\delta x')] represent a time change and the corresponding distance moved by the object relative to Observer-2. Every displacement in this article only reflects the perspective of Observer-1, not the perspective of Observer-2.
+//- Likewise, a space displacement is the difference of two points in space. What two points in space? A space displacement is the differenceof time is the time between The displac They are the differences in time or space between two events. An event is any point in time and space, whether or not an actual, visible, event occured at that time at that position. An event is expressed as a list of coordinates for time and space [(t,x)]. Different observers may have different coordinates for the same event, because different observers may differently experience displacements in time and space. In our scenario the event [(0,0)] marks the time and position at which the observers and the object began. For this event, both observers have the same coordinates [(0,0)]. Another event is the point that marks the object after some time has passed and the object has moved some distance. This event may have different coordinates, [(t,x)] and [(t',x')], for the two observers. Two difference of the two events [(t,x)] and [(0,0)] can form the pair of displacements [(\delta t,\delta x)]. Likewise, the
+//- p 
+//- Let this event be one of the two events that mark the [\delta]s.  Let this event be the other of the two events that mark the [\delta]s. To summarize, the object travles some distance in some time. Within that interval, the object has traveled [\delta x] in [\detla t] for Observer-1, and [\delta x'] in [\delta t'] for Observer-2.
+
+
+h2 Setting up the problem
+p Let us now fully set up the problem with its known variables, unknown variables, and variable restrictions.
+p Suppose the following are known:
+ul
+  li: p The speed of light, [c].
+  li: p The relative velocity of the observers, [v].
+  li: p The space displamenet for Observer-1, [\delta x].
+  li: p The time displacement for Observer-1, [\delta t].
+p The following are then unknown.
+ul
+  li: p The space displamenet for Observer-2, [\delta x'].
+  li: p The time displacement for Observer-2, [\delta t'].
+p The following restrictions apply.
+ul
+  li: p The velocity of light relative to Observer-1 is [c]. Suppose the object is a light beam. Since that is a possible case, we must apply the restriction [\frac{\delta x}{\delta t}=c].
+  li: p The velocity of light relative to Observer-2 is [c]. Suppose the object is a light beam. Since that is a possible case, we must apply the restriction [\frac{\delta x'}{\delta t'}=c].
+  li: p The velocity of Observer-2 relative to Observer-1 is denoted [v]. This relative velocity of the observers can be incorporated into the problem by the following case. Suppose Observer-2 travels at the same speed as the object, such that [\delta x'=0]. In this case the velocity of the object relative to Observer-1 is effectively the velocity of Observer-2 relative to Observer-1, meaning [\frac{\delta x}{\delta t}=v] Thus, the restriction must apply that [\frac{\delta x}{\delta t}=v] if [\delta x'=0].
+p Our goal is to find the two unknowns from the four knowns, while obeying the three restrictions. Doing this will describe the relationship between [(\delta t,\delta x)] and [(\delta t',\delta x')], which in turn will describe the relationship between the coordinate systems for Observer-1 and Observer-2.
+
+
+h2 Solving the problem
+p In seeking [\delta t'] and [\delta x'] we may best begin by examining upon what these two variables depend. These variables can depend upon [c], [v], [\delta x], and [\delta t]. These four symbols are the only symbols that exist in the scenario other than the unknowns; moreover, these four symbols have known values. The symbol [c] never changes; the symbol [v] is subject to change; for a given value of [v], the symbols [\delta t] and [\delta x] are in turn subject to change. In this derivation we will treat the two symbols [c] and [v] as constants, and the two symbols [\delta t] and [\delta x] as variables. Considering the dependencies of [\delta t'] and [\delta x'] and whether each dependency is a constant or a variable, we can describe the basic form of each unknown [\delta t'] and [\delta x'] as a function of two variables, [\delta t] and [\delta x], given two constants, [v] and [c]. That is, [\delta t'=\delta t'(\delta t,\delta x|v,c)] and [\delta x'=\delta x'(\delta t,\delta x|v,c)].
+p We next consider the nature of the functions [\delta t'] and [\delta x']. Suppose Observer-1 observes displacements [(\delta t,\delta x)]. Observer-2 then observes displacements [(\delta t'(\delta t,\delta x),\delta t'(\delta t,\delta x))]. We can take the displacements for Observer-1 and break them into two components each [(\delta t,\delta x) = (\delta t_1 + \delta t_2,\delta x_1 + \delta x_2)]. While Observer-1 observes the displacements [(\delta t_1,\delta x_1)], Observer-2 observes corresponding displacements [(\delta t'(\delta t_1,\delta x_1),\delta x'(\delta t_1,\delta x_1))]. Likewise, while Observer-1 observes the displacements [(\delta t_2,\delta x_2)], Observer-2 observes corresponding displacements [(\delta t'(\delta t_2,\delta x_2),\delta x'(\delta t_2,\delta x_2))]. Thus, while Observer-1 observes total displacements [(\delta t,\delta x) = (\delta t_1 + \delta t_2,\delta x_1 + \delta x_2)], Observer-2 observes total displacements [(\delta t'(\delta t,\delta x),\delta x'(\delta t,\delta x)) = (\delta t'(\delta t_1,\delta x_1) + \delta t'(\delta t_2,\delta x_2),\delta x'(\delta t_1,\delta x_1) + \delta x'(\delta t_2,\delta x_2)]. This informal analysis implies [\delta t'] and [\delta x'] are each a linear function of [\delta x] and [\delta t]. That is, the two functions take the following form.
+m.
+  \delta t'(\delta t,\delta x|v,c) = K(v,c)\delta t + L(v,c)\delta x \\
+  \delta x'(\delta t,\delta x|v,c) = M(v,x)\delta t + N(v,c)\delta x
+p where the coefficients [K], [L], [M], and [N] may be composed of constants including [v] and [c]. More succinctly,
+m.
+  \delta t' = K\delta t + L\delta x \\
+  \delta x' = M\delta t + N\delta x
+p We continue to seek the two unknowns given the four knowns while obeying the three restrictions; only now, both unknowns have been reduced to linear functions. As a result, we now week a two-dimensional linear transformation. The transformation can be described by the matrix [\begin{pmatrix} K & L \\ M & N \end{pmatrix}], and it maps the displacements [(\delta t,\delta x)] to corresponding displacements [(\delta t',\delta x')]. We will focus first on the transformation of space and find the relevant symbols [M] and [N]. We will focus second on the transformation of time and find the relevant symbols [M] and [N].
+com
+  p Knowing matrix multiplication is helpful, if not necessary, for understanding the remaining content. A resource is _https://www.mathsisfun.com/algebra/matrix-multiplying.html_
+
+h3 Transformation of space
+p To narrow possibilities let us apply the third restriction. That is, when [\delta x'=0] it must be that [\frac{\delta x}{\delta t}=v], thereby [\delta x=v\delta t]. Plugging these values into the first equation and then rewritting the equation yields
+m.
+  0 = M\delta t + N(v\delta t) \rightarrow -Nv = M \\
+  \delta x' = N\delta x - Nv\delta t = N(\delta x - v\delta t) \label(eq:1)
+p Due to homogeneity no observer is special. Although in our original scenario Observer-1 is fixed and Observer-2 is moving to the right with velocity [v], it could just as well be that Observer-2 is fixed and Observer-1 is moving to the left with velocity [-v]. Thus it is valid to rewrite the space transformation equation by switching the observers and reversing the velocity. In other words, we replace [\delta x] with [\delta x'], [\delta t] with [\delta t'], and [v] with [-v] yielding the equation
+m.
+  \delta x = N(\delta x' + v\delta t') \label(eq:2)
+p We will now try to combine equations [1] and [2] to solve for [N]. Currently, equations [1] and [2] contain a total of [5] variables: [N], [\delta x], [\delta t], [\delta x'], and [\delta t']. Typically when combining [n] equations only [n] variables can exist. But in our case of two equations it turns out more than two variables can exist still allowing us to solve for [N]. Before combining the equations let us eliminate excess variables that we can. This should be done by exploiting the first two restrictions. The first two restrictions state that for the case of the object being a beam of light, [\frac{x}{t}=\frac{x'}{t'}=c]. More succinctly, when [\frac{x}{t}=c] it must be that [\frac{x'}{t'}=c], and when [\frac{x'}{t'}=c] it must be that [\frac{x}{t}=c]. We apply this first restriction by examining equations [1] and [2] and replacing every [x] with [ct] and every [x'] with [ct']. This way, we should be left with only three variables [N], [t], and [t'].
+m.
+  c\delta t'=N(c\delta t - v\delta t) \rightarrow 
+  \delta t'=N\delta t(1 - \frac{v}{c}) \label(eq:3)\\
+  c\delta t = N(c\delta t' + v\delta t') \rightarrow 
+  \delta t=N\delta t'(1+\frac{v}{c}) \label(eq:4)
+p By mutliplying the equations [3] and [4] we can turn [\delta t] and [\delta t'] into a single variable [\delta t'\delta t].
+m.
+  \delta t'\delta t = N^2\delta t\delta t'(1-\frac{v}{c})(1+\frac{v}{c})
+  = N^2\delta t\delta t'(1-(\frac{v}{c})^2) \\
+  \rightarrow 1 = N^2(1-(\frac{v}{c})^2) \rightarrow N = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}
+p Hence the transformation for space displacement is
+m.
+  \delta x' = N(\delta x - v\delta t) \rightarrow \\
+  \delta x' = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}(\delta x - v\delta t)
+p The two symbols for the bottom row of the transformation matrix have the values [M=-vN=\frac{-v}{\sqrt{1-(\frac{v}{c})^2}}] and [N=\frac{1}{\sqrt{1-(\frac{v}{c})^2}}].
+
+h3 Transformation of time
+p Equation [3] looks close to what we need to find the time transformation, but [\delta t'] must be a function of not just [\delta t] but also [\delta x]. Suppose we use the expanded form of equation [3] to exploit the relationship [x=ct], for the special case that the object is light, as follows.
+m.
+  \delta t'=N(\delta t - \frac{v}{c}\delta t) =
+  N(\delta t - \frac{v}{c}\frac{\delta x}{c}) = 
+  N(\delta t - \frac{v}{c^2}\delta x)
+p Since we know the value of [N], the time transformation becomes
+m.
+  \delta t' = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}(\delta t - \frac{v}{c^2}\delta x) =
+  \frac{\delta t}{\sqrt{1-(\frac{v}{c})^2}} - \frac{v\delta x}{c^2\sqrt{1-(\frac{v}{c})^2}}
+p Matching the coefficient of [x] to [L] and the coefficient of [t] to [K] the symbols for the bottom row of the transformation matrix have the values [L=-\frac{v}{c^2\sqrt{1-(\frac{v}{c})^2}}] and [K=\frac{1}{\sqrt{1-(\frac{v}{c})^2}}]. The factor [N=\frac{1}{\sqrt{1-(\frac{v}{c})^2}}] appears often enough, such as in every symbol of the transformation matrix, that it is denoted by the Greek letter [\gamma] and called the Lorentz factor. As such, the transformation symbols become [N=\gamma], [M=-v\gamma], [L=-\frac{v}{c^2}\gamma], and [K=\gamma]. Finally, the full transformation in matrix form is
+m.
+  \begin{pmatrix}
+  \delta t' \\
+  \delta x'
+  \end{pmatrix} =
+  \begin{pmatrix}
+  \gamma & -\frac{v}{c^2}\gamma \\
+  -v\gamma & \gamma
+  \end{pmatrix}
+  \begin{pmatrix}
+  \delta t \\
+  \delta x
+  \end{pmatrix}
+
+h2 Understanding the solution
+p How exactly does this transformation solve the trouble of our graph in _Figure 2_? The trouble disappears because we dropped the assumption that Observer-2 has the same coordinate system as Observer-1. The goal then became to describe how coordinates of Observer-2 differ from those of Observer-1. The transformation we have derived does just that! If the displacements of Observer-1, [(\delta t,\delta x)], are known, then multiplying them by the transformation matrix will yield corresponding displacements for Observer-2, [(\delta t',\delta x')]. This tranformation is called the 'Lorentz transformation'. Hendrik Lorentz actually derived the Lorentz transformation before Albert Einstein used it to derive special relativity.
+
+h3 Perspectives
+p An important point is that displacements for Observer-2 are `not` the same as displacements experienced by Observer-2 `from the perspective of Observer-2`! Rather, displacements for Observer-2 are displacements experienced by Observer-2 `from the perspective of Observer-1`. Moreover, ~all content in this article considers the perspective of only Observer-1~. Due to the homogeneity assumption, the perspective of Observer-1 is no more special than the perspective of Observer-2. Therefore, all analysis in this article remains valid if we were to instead consider the perspective of only Observer-2.
+
+h3 Inverse transformation
+p Suppose the displacements experienced by Observer-1 (from the perspective of Observer-1) are unknown, but the displacements experienced by Observer-2 (from the perspective of Observer-1) are known. The inverse of the transformation can use the displacements of Observer-2 to calculate the displacements of Observer-1. This capacity of the inverse transformation implies it can be represented by the inverse matrix of the transformation matrix. To find the inverse transformation, we could directly caclulate the inverse of the transformation matrix. Or, we could take advantage of homogeneity to assert that transformations from Observer-2 to Observer-1 are identical to transformations from Observer-1 to Observer-2, except for the direction of relative velocity [v]. In the original transformation we consider Observer-2 relative to Observer-1 using relative velocity [v]. In the inverse transformation we switch to consider Observer-1 relative to Observer-2, and therefore relative velocity switches directions to become [-v]. Since the only difference between transformations is the sign of the relative velocity, the inverse transformation can be obtained by taking the original transformation and simply switching the sign of every instance of [v]. This inverse transformation is called the `inverse Lorentz transformation` and can be represented by the inverse matrix
+m.
+  \begin{pmatrix}
+  \delta t \\
+  \delta x
+  \end{pmatrix} =
+  \begin{pmatrix}
+  \gamma & \gamma\frac{v}{c^2} \\
+  \gamma v & \gamma
+  \end{pmatrix}
+  \begin{pmatrix}
+  \delta t' \\
+  \delta x'
+  \end{pmatrix}
+p The best way to understand the Lorentz and inverse Lorentz transformations and how they provide a solution the scenario is to take the time to understand the diagrams at the top of this article.
+
+h2 Understanding the diagrams
+p At the top of this article are two interactive diagrams. The $color2 grids are the coordinate systems for Observer-1; we will call these the base frames. The $color1 grids are the coordinate systems for Observer-2; we will call these the prime frame. Once we understand the coordinates for these frames it is easy to understand the displacements for these frames because displacements are simply changes in coordinates. Proceeding, we only consider coordinates, that is we drop the deltas and only consider the symbols: [\delta\text{symbol}\rightarrow\text{symbol}].
+
+h3 Transformation diagram
+p First we examine the Lorentz transformation illustrated in the left diagram. The Lorentz transformation takes every pair of coordinates [(t,x)] in the base frame and maps it to a unique pair of coordinates [(t',x')] in the prime frame. How this transformation can be described visually is counterintuitive. Since we examine the Lorentz transformation we must consider Observer-2 relative to Observer-1; this means we must consider the prime frame relative to the basic frame. We choose to illustrate the base frame uniformly with horizontal and vertical lines. Suppose the prime frame is the same as the basic frame; in this case we illustrate the prime frame on top of the basic frame with identical lines. But as we know the prime frame is not necessarily the same as the basic frame, but may well be different due to our dropped assumption. In order to view the necessarily correct prime frame in terms of the base frame, we must appropriately transform our currently uniform prime frame. We must convert all coordinates within the uniform prime frame into coordinates within the basic frame. Converting prime coordinates to basic coordinates can be done by inserting the prime coordinates into the `inverse` Lorentz transformation, or mulitplying them by the inverse matrix. The $color1 grid shows the transformed prime frame. Counterintuitively, the diagram illustrates the Lorentz transformation by applicaiton of the inverse Lorentz transformation.
+
+h3 Inverse transformation diagram
+p Second we examine the inverse Lorentz transformation illustrated in the right diagram. This diagram does `not` reflect the perspective of Observer-2. This diagram reflects the perspective of Observer-1, illustrating coordinates for Observer-1 relative to coordinates for Observer-2. In order to show the base frame relative to the prime frame, all coordinates within the base frame are inserted into the Lorentz transformation or multiplied by the transformation matrix. The $color2 grid shows the transformed base frame. Counterintuitively, the diagram illustrates the inverse Lorentz transformation by use of the Lorentz transformation.
+
+h3 Interacting with the diagram
+p The speed of light, [c], can be set to any value in the interval [[0,\infinity)]. The relative velocity, [v], can be set to any value in the interval [[0,c]]. Notice that regardless of the value of [c] or [v], the three conditions for the scenario, stated at the beginning of the article, are met! Namely,
+ul
+  li: p Light moves relative to Observer-1 with velocity [c\gt 0]. In other words, the slope of light relative to the base frame is [c].
+  li: p Light moves relative to Observer-2 with velocity [c\gt 0]. In other words, the slope of light relative to the prime frame is [c].
+  li: p Observer-2 moves relative to Observer-1 with velocity [0\leq v\lt c]. How do we know this? Suppose [x'=0] so we only care about the vertical axis [t']. Since [x'=0] it must be that [x=vt\rightarrow v=\frac{x}{t}]. The slope of the [t'] axis reflects this because every change in one variable [x] or [t] is accompanied by a change in the other variable such that [\frac{x}{t}=v]. The velocity [v] is found by the slope of any vertical line in the prime frame relative to any horizontal line in the base frame.
+p With these three conditions met, our derivation of the Lorentz transformation has provided a solution for the scenario. The transformation effectively describes how the seemingly paradoxial scenario is possible and in fact not paradoxical at all.
+
+h2 Extending the solution
+p I hope this content has been helpful to you. The reason I began researching special relativity is not to explain the its basic idea. Rather, my purpose was to `generalize` the basic idea of special relativity: that the constancy of one variable (the speed of light) implies a transformation of other variables (time and distance). I hoped a generalization could be applied to other contexts involving two variables (like space and time) and their quotient (like velocity). If I could find a quotient that is always constant (like the speed of light) then I could discover transformations of the two variables within that quotient (like space and time). My generalization was more sophisticated, but I came to realize that applying the generalization is more difficult than I imagined. Moreover, I realized the Lorentz transformation is just one of an infinite number of two-dimensional linear transformations. If I am interested in the transformation of variables, I may be better to explore the application of general linear transformations.
+
+
+h2 Sources
+p _http://www.physicsoftheuniverse.com/topics_relativity_light.html_
+p _https://en.wikipedia.org/wiki/Derivations_of_the_Lorentz_transformations_
+
+
+

@@ -1,0 +1,40 @@
+The idea that the speed of light is constant with respect to all inertial frames has profound implications for time and distance as we know it. Relativity takes the constancy of light and proves that time and distance are malleable and have different values for different inertial frames.
+
+I was hoping I could find or develop other systems with an equivalent property of constancy that would yield equivalently profound implications. Specifically, an equivalent system would be based upon two independent variables just as the physical system in the context of relativity is based upon the two independent variables of distance and time. As time dilation and length contraction exist in the physical system, so malleability would exist for the variables of the equivalent system.
+
+In order to generalize systems with the property of constancy, it is helpful to clarify the nature of the physical system. In the physical system there are objects. Each object has a change in time and change in distance. The ratio of an object's change in distance to change in time is called its velocity. There is a unique object called `light` that has a special property.
+
+As I began seeking equivalent systems I realized how difficult they are to find or create.
+
+Consider a collection of objects. Each pair of objects has a relationship consisting of a certain amount of red and blue. There is one object called the `constant` that has the same ratio of red to blue with every other object. Let us try to derive the Lorentz transformation for this system.
+
+________________
+
+problem in relativity
+graph it
+let go of assumption
+define need for transformation
+derive transformation
+show invariant interval
+derive hyperbolic rotation
+show diagram
+seek analogy
+
+
+constancy. light is constant to everything.
+everything has different coordinate systems.
+
+in relativity, it was assumed everything has same coordinates. but there was constancy. to reconcile the two, the idea of same coordinates was dropped.
+relativity is an example saying: constancy -> diff coords.
+
+what about the converse? if everything has different coords, does there necessarily exist an object of constancy?
+
+for a system, there are four restrictions. there is only one light, light relative to a is c, light relative to b is c, and a is not b.
+l, a, and b are all frames. each frame has a two dimensional coordinate system, can be drawn as such with a pair of axes (not necessarily perpendicular) and a grid. to calculate frame x relative to frame y, calculate the relative slope of the horizontal axes (eg horiz axis x relative to horiz slope y), or the negative relative slope of the vertical axes.
+we don't care to draw the frame of the light.
+
+
+need to find transformation
+
+
+

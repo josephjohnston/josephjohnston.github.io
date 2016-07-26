@@ -1,0 +1,13 @@
+canvas {
+  /*margin: 20px;*/
+  /*padding: 10px;*/
+  /*background: blue;*/
+  border: 4px outset blue;
+}
+
+#light-slider, #velocity-slider {
+  margin: 10px;
+  display: block;
+  width: 1200px;
+  height: 10px;
+}
