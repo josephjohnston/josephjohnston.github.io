@@ -238,7 +238,7 @@ Diagram.prototype = {
   },
   enter: function() {
     if(/*$.disclaimed==true && */$.loaded==true) {
-      // $.audio.play()
+      $.audio.play()
       // reset top bar
       document.getElementById('top-bar').innerHTML = 'use mousepad or left and right arrow keys';
       $.setStage()
