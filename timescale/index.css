@@ -1,0 +1,12 @@
+#top-bar {
+  font-size: 24px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: yellow;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body {
+  background: #47725b;
+}

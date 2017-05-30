@@ -1,13 +1,16 @@
-canvas {
-  /*margin: 20px;*/
-  /*padding: 10px;*/
-  /*background: blue;*/
-  border: 4px outset blue;
+.noUi-handle {outline:none;}
+
+#canvas-container {
+  width: 610px;
+  margin: auto;
 }
 
 #light-slider, #velocity-slider {
-  margin: 10px;
-  display: block;
-  width: 1200px;
-  height: 10px;
+  margin: auto;
+  width: 80%;
+  left: 40px;
+  height: 20px;
+}
+#velocity-slider {
+  margin-top: 10px;
 }
