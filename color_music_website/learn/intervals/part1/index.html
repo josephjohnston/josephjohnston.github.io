@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    <head>
+        <title>Intervals</title>
+        
+        <meta name="description" content="Intervals">
+        <meta name="author" content="Conor Parrish" ,"Joseph Johnston" ,"Akira Youngblood">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="../../../reset.css">
+    	<link rel="stylesheet" href="../../../style.css">
+    	<link rel="stylesheet" href="../../style.css">
+    	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="../../../graphics/colorCircle/intervalCircle.css">
+    	<link rel="stylesheet" href="../../../graphics/keyboards/fifthsKeyboard.css">
+    	
+    </head>
+    
+    <body class="currentLearn" id="currentIntervals">
+        <div id="wrapper">
+		    <!--MAIN NAV BAR-->
+		    <div id="navbar">
+		        <table>
+		            <tr>
+		                <td>
+		                    <a class="button" id="home" href="../../../index.html">Home</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="play" href="http://mudcu.be/piano/" target="_blank">Play</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="learn" href="../../intro/index.html">Learn</a>
+		                </td>
+	                    <td>
+		                    <a class="button" id="store" href="../../../store/index.html">Store</a>
+	                    </td>
+                    </tr>
+	            </table>
+            </div>
+            <!--LEARN SUB MENU-->
+            <table id="subnav">
+                <tr>
+                    <td>
+                        <a class="buttLearn" id="currentIntro" href="../../intro/index.html">Introduction</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                       <a class="buttLearn" id="currentColorArray" href="../../colorArray/index.html">Color Array</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentIntervals" href="index.html">Intervals</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentScales" href="../../scales/part1/index.html">Scales</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentChords" href="../../chords/part1/index.html">Chords</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentMore" href="../../howToUse/index.html">Using the App</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <div id="subMenuLine"></div>
+            
+            <!--INTERVALS SUBMENU-->
+            <table id="subIntNav">
+                <tr id="currentInt1">
+                    <td>
+                        <p class="subsub" >Part:</p>
+                    </td>
+                    <td id="subIntNavE"></td>
+                    <td>
+                        <a class="buttInt" id="currentInt1" href="index.html">1</a>
+                    </td>
+                    <td id="subIntNavE"></td>
+                    <td>
+                        <a class="buttInt" id="currentInt2" href="../part2/index.html">2</a>
+                    </td>
+                </tr>
+            </table>
+            <!--HEADERS-->
+            <div id="header">
+                <p>Intervals</p>
+            </div>
+            <div id="subheader">
+                <p>The Relationship of Two Notes.</p>
+            </div>
+            
+            <!--CONTENT-->
+            <div id="container">
+                <!--'HARMONY AND DISSONANCE' SECTION-->
+                <div class="block">
+                    <div id="harmAndDissPara"class="wide">
+                        <p class="bodyheader">Harmony and Dissonance</p>
+                        <p class="bodytext">
+                            An interval is the harmonic relationship between any two notes. Again, notes located 
+                            near each other on the circle of fifths sound harmonious together, and notes located 
+                            further apart on the circle sound more dissonant together. People might interpret 
+                            harmonious combinations as sounding better than dissonant ones, but harmonious 
+                            melodies can become monotonous. Dissonant combinations add kick – they have an edge 
+                            to them that makes music so engaging.
+                        </p>
+                    </div>
+                </div>
+                <p id="harmonious">Harmonious<br>Interval</p>
+                <p id="dissonant">Dissonant<br>Interval</p>
+                <div class="block">
+                    <div id="intervalCircleWrapper">
+                        <div id="harmonyAndDissonance">
+                            <canvas id="canvas" width="280" height="280">Canvas not supported</canvas>
+                        </div>
+                        <div id="reference">
+                            <div class= "circles" id="C"><p>C</p></div>
+                            <div class= "circles" id="G"><p>G</p></div>
+                            <div class= "circles" id="D"><p>D</p></div>
+                            <div class= "circles" id="A"><p>A</p></div>
+                            <div class= "circles" id="E"><p>E</p></div>
+                            <div class= "circles" id="B"><p>B</p></div>
+                            <div class= "circles" id="Gb"><p>G<span>b</span></p></div>
+                            <div class= "circles" id="Db"><p>D<span>b</span></p></div>
+                            <div class= "circles" id="Ab"><p>A<span>b</span></p></div>
+                            <div class= "circles" id="Eb"><p>E<span>b</span></p></div>
+                            <div class= "circles" id="Bb"><p>B<span>b</span></p></div>
+                            <div class= "circles" id="F"><p>F</p></div>
+                            <div id="hollowCircle"></div>
+                        </div>
+                    </div>
+                    <!--'MATHEMATICAL RELATIONSHIP' SECTION-->
+                    <div class="block">
+                        <div class="wide">
+                            <p class="bodyheader">Mathematical Relationship</p>
+                            <p class="bodytext">
+                                There is also a mathematical explanation as to why some notes sound harmonious 
+                                together while others sound dissonant. We will go into more detail on this through 
+                                the remainder of the intervals section. Feel free to skip to Scales Part 1 if you 
+                                prefer not to read this section. If you’re still here, pay close attention! Every 
+                                note on the piano is attached to a string that is struck when you press a piano key. 
+                                Each string is a different length, which renders a certain frequency wave (pitch) 
+                                that we hear as the sound of that note. The mathematical relationship of an interval 
+                                comes from measuring two aspects of that interval’s two notes. The first measurement 
+                                concerns the relative string lengths of the two notes. The second measurement concerns 
+                                the relative frequencies of the two notes, which are closely related to the string 
+                                lengths.
+                            </p>
+                        </div>
+                    </div>
+                    <!--'EVERYTHING IS RELATIVE' SECTION-->
+                    <div class="block">
+                        <div class="wide">
+                            <p class="bodyheader">Everything is Relative</p>
+                            <p class="bodytext">
+                                In Part 2 of Intervals, we will address each interval according to this mathematical 
+                                approach so that you can better understand why similar color intervals are harmonious 
+                                and opposing color intervals are dissonant. In Part 2, we will compare note C to each 
+                                of the other eleven notes. Below, C is represented by the longest string on the harp, 
+                                which is currently darkened to exhibit it as the string of focus. When we discuss every 
+                                note in relation to C, C is equal to one when measured relative to itself in both string 
+                                length and frequency. The fraction on the left specifies relative string length while 
+                                the fraction on the right specifies relative frequency. As we move through the intervals 
+                                in Part 2, examine these fractions for each interval and see if you can detect patterns. 
+                                As you can see, there are twelve strings to compare to C. Thus, we will discuss twelve 
+                                intervals.
+                            </p>
+                        </div>
+                    </div>
+                    <!--THE HARP-->
+                    <div>
+                        <table id="harpGroup">
+                            <tr>
+                                <td id="leng">
+                                    <p id="fracTopL">1</p> <div id="fracLineL"></div> <p id="fracBottomL">1</p> <p id="timesL">X</p>
+                                    <div id="lineLeftL"></div> <p id="theL">the</p> <div id="lineRightL"></div>
+                                    <p id="lengL">Length</p>
+                                    <p id="ofLowestL">Of the Lowest<br>String (Itself)</p>
+                                </td>
+                                <td id="uglyHarp">
+                                    <canvas id="canvasUH" width="566" height="566">Canvas not supported</canvas>
+                                </td>
+                                <td id="freq">
+                                    <p id="fracTopR">1</p> <div id="fracLineR"></div> <p id="fracBottomR">1</p> <p id="timesR">X</p>
+                                    <div id="lineLeftR"></div> <p id="theR">the</p> <div id="lineRightR"></div>
+                                    <p id="freqR">Frequency</p>
+                                    <p id="ofLowestR">Of the Lowest<br>String (Itself)</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--BY EXAMINING-->
+                    <div class="block">
+                        <div id="byExamining">
+                            <p class="bodytext">
+                                When we examine twelve intervals relative to C, we will address every possible interval. 
+                                For our purposes, we do not need to compare every note to every note besides C. This is 
+                                because intervals are relative measurements. In other words, if you start on C and move 
+                                up four notes, you will construct the same interval that you would if you started on any 
+                                other note and moved up four notes, as shown below.
+                            </p>
+                        </div>
+                    </div>
+                    <!--ALL THE SAME TEXT-->
+                    <div class="block">
+                        <div id="allSameText">
+                            <p class="bodyheader">All the Same</p>
+                        </div>
+                    </div>
+                    <!--ALL THE SAME-->
+                    <div class="block">
+                        <div id="intervalArrows">
+                            <canvas id="canvasAS" width="343" height="105">Canvas not supported</canvas>
+                        </div>
+                        <div id="fifthsKeyboard">
+                            <div class="fC" id="bottom"></div>
+                            <div class="fC" id="topBig"></div>
+                            <div class="fG" id="bottom"></div>
+                            <div class="fG" id="topSmall"></div>
+                            <div class="fD" id="bottom"></div>
+                            <div class="fD" id="topHuge"></div>
+                            <div class="fA" id="bottom"></div>
+                            <div class="fA" id="topSmall"></div>
+                            <div class="fE" id="bottom"></div>
+                            <div class="fE" id="topBig"></div>
+                            <div class="fB" id="bottom"></div>
+                            <div class="fB" id="topMiddle"></div>
+                            <div class="fGb" id="blackSmall"></div>
+                            <div class="fDb" id="blackBig"></div>
+                            <div class="fAb" id="blackBig"></div>
+                            <div class="fEb" id="blackBig"></div>
+                            <div class="fBb" id="blackSmall"></div>
+                            <div class="fF" id="bottom"></div>
+                            <div class="fF" id="topMiddle"></div>
+                        </div>
+                    </div>
+                    <!--FOOTER SECTION-->
+                    <div class="block">
+                        <div id="footerLine"></div>
+                            <p class="bodytext" id="footer">
+                                In Part 2, you’ll find information about each of the twelve intervals and browse 
+                                graphics to see these intervals in action. Don’t worry if you are confused; you won’t 
+                                need to fully understand Part 2 in order to follow the rest of the sections.
+                            </p>
+                        <div id="nextArrow">
+                            <a id="nextArrowText" href="../part2/index.html">Part 2</a>
+                            <div id="nextArrowTip"></div>
+                            <div id="nextArrowLine"></div>
+                        </div>
+                        <div id="pastArrow">
+                            <a id="pastArrowText" href="../../colorArray/index.html">Colors</a>
+                            <div id="pastArrowTip"></div>
+                            <div id="pastArrowLine"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--USE CHROME-->
+                <div id="popup" class="block">
+                    <a href="#" onclick="return false;">X</a>
+                    <div id="useChrome">
+                        <img id="chromeLogo" src="../../../images/ChromeLogo.png" alt="Chrome Logo" height="150" width="150">
+                        <div>
+                            <a id="downloadChrome" href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Download<br>Chrome</a>
+                        </div>
+                    </div>
+                    <p class="bodyheader">Use Chrome</p>
+                    <p class="bodytext" id="bodytextChrome">We strongly recommend you use Google Chrome Browser to play
+                    this app. Chrome lends higher quality sound than other browsers and also loads the app more easily. 
+                    Click below to download Chrome. Once you have downloaded Chrome, return to colorpiano.com and click 
+                    ‘Play’ once more.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--SCRIPTS-->
+        <script src="../../../jquery.js"></script>
+        <script src="../../../graphics/colorCircle/intervalCircle.js"></script>
+        <script src="../../../graphics/colorCircle/harmonyAndDissonance.js"></script>
+        <script src="../../../graphics/keyboards/allSame.js"></script>
+        <script src="../../../script.js"></script>
+        <script src="script.js"></script>
+        
+    </body>
+</html>

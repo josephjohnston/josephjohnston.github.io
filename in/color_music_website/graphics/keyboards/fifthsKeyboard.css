@@ -1,0 +1,137 @@
+#fifthsKeyboard {
+    width: 343px;
+    height: 174px;
+    position: relative;
+}
+#bottom {
+    width: 46px;
+    height: 73px;
+    border-radius: 4px;
+    position: absolute;
+}
+#topHuge {
+    width: 24px;
+    height: 108px;
+    border-radius: 4px;
+    position: absolute;
+}
+#topBig {
+    width: 25px;
+    height: 108px;
+    border-radius: 4px;
+    position: absolute;
+}
+#topMiddle {
+    width: 24px;
+    height: 108px;
+    border-radius: 4px;
+    position: absolute;
+}
+#topSmall {
+    width: 24px;
+    height: 108px;
+    border-radius: 4px;
+    position: absolute;
+}
+#blackBig {
+    width: 28px;
+    height: 99px;
+    border-radius: 4px;
+    position: absolute;
+}
+#blackSmall {
+    width: 27px;
+    height: 99px;
+    border-radius: 4px;
+    position: absolute;
+}
+#bottom.fC {
+    top: 101px;
+}
+#bottom.fD {
+    left: 49px; top: 101px;
+}
+#bottom.fE {
+    left: 98px; top: 101px;
+}
+#bottom.fF {
+    left: 148px; top: 101px;
+}
+#bottom.fG {
+    left: 198px; top: 101px;
+}
+#bottom.fA {
+    left: 248px; top: 101px;
+}
+#bottom.fB {
+    left: 298px; top: 101px;
+}
+#topHuge.fD {
+    left: 60px;
+}
+#topBig.fE {
+    left: 119px;
+}
+#topMiddle.fF {
+    left: 148px;
+}
+#topSmall.fG {
+    left: 205px;
+}
+#topSmall.fA {
+    left: 263px;
+}
+#topMiddle.fB {
+    left: 320px;
+}
+#blackBig.fDb {
+    left: 28px;
+}
+#blackBig.fEb {
+    left: 87px;
+}
+#blackSmall.fGb {
+    left: 175px;
+}
+#blackBig.fAb {
+    left: 232px;
+}
+#blackSmall.fBb {
+    left: 290px;
+}
+.fC {
+    background-color: rgb(255,255,11);
+}
+.fG {
+    background-color: rgb(255,198,0);
+}
+.fD {
+    background-color: rgb(255,153,0);
+}
+.fA {
+    background-color: rgb(255,100,0);
+}
+.fE {
+    background-color: rgb(255,0,100);
+}
+.fB {
+    background-color: rgb(219,0,215);
+}
+.fGb {
+    background-color: rgb(138,0,241);
+}
+.fDb {
+    background-color: rgb(74,31,255);
+}
+.fAb {
+    background-color: rgb(26,142,255);
+}
+.fEb {
+    background-color: rgb(0,199,166);
+}
+.fBb {
+    background-color: rgb(2,219,0);
+}
+.fF {
+    background-color: rgb(170,255,0);
+}

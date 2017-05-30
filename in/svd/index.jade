@@ -1,5 +1,6 @@
-link(href='main.css',rel='stylesheet')
 h1 Image Compression with SVD
+
+hr
 
 h2 Abstract
 p This article offers a derivation of singular value decomposition (SVD) and its application in image compression. First introduced is the concept and properties of a symmetric matrix. These properties are exploited to apply to any matrix such that the matrix transformation can be decomposed with SVD into a simple scaling transformation. The simplicity of the scaling transformation offers opportunities to accurately approximate the information of the matrix. Such approximation can be applicable to the compression of images. An example of SVD inspired image compression is presented at the end.
@@ -90,6 +91,7 @@ m.
   U^TAQ=C\rightarrow A=UCQ^T
 p where the columns of [Q] form an orthonormal basis for [R^n] and the columns of [U] form an orthonormal basis for [R^m]. Since [A^TA] and [AA^T] have [r] non-zero eigenvalues, [A] has [r] non-zero singular values. These singular values appear on the top left diagonal entries of the [m\times n] matrix [C] in decreasing order. This scaling transformation [C] and its change of bases [Q] and [U] constitute a decomposition of [A] called the singular value decomposition.
 
+hr
 
 h2 Image Compression by SVD
 h3 Data Compression
@@ -147,6 +149,8 @@ table(align='center')
       td 0.0139
       td 0.9502
 p As seen in the table, keeping [200] singular values will keep [99.89]% of the information of the original image, while the compression ratio is surprisingly low, only about [55.61]%, which means the modified image occupies just only half the space of the original one. At the other end of the ranks, rank [5] yields an image retaining [95.02]% of the information, but the image is barely recognizable. Comparing the images of for ranks [500] and [5] it becomes evident how much our recognition depends upon the many small image details. Just as the difference in information between the two images is a small [99.89-95.02=4.87]% yet the images appear dramatically different, so too do the genes between chimps and humans differ only by [1.2]% yet traits and appearance differ dramatically.
+
+hr
 
 h2 Conclusion
 p The example above should demonstrate some applicability of SVD. The mathematical formulation of the SVD was intended to offer an additional perspective and additional meaning for origin, nature, and purpose of the SVD than is usually offered in introductory textbooks. Suggestions for improvement and sources of confusion are welcomed in the comments below.

@@ -1,0 +1,24 @@
+body {
+    background: black;
+}
+#popup {
+    bottom: 965px;
+}
+.chromeTop {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 120px 0 85px;
+}
+.searchTop {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 100px;
+}
+.iconTop {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 100px 0 20px;
+}
+#hFooter {
+    height: 10px;
+}

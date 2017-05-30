@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+#uglyHarp {
+    position: absolute;
+}
+#freq {
+    font-family: "HelveticaNeue-Light";
+    font-size: 45px;
+    position: relative; float: right; top: 450px;
+    color: white;
+}
+#leng {
+    font-family: "HelveticaNeue-Light";
+    font-size: 45px;
+    position: relative; float: left;
+    color: white;
+}

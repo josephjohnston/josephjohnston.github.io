@@ -1,0 +1,206 @@
+#popup {
+    display: none;
+    bottom: 750px;
+}
+#bodytextChrome {
+    color: rgb(150,150,150);
+    font-size: 20px;
+    margin: 10px 30px 0 50px;
+    text-align: left;
+    line-height: 24px;
+    font-family: "HelveticaNeue-Light","HelveticaNeue-Thin",sans-serif;
+}
+/*LEARN SUBMENU*/
+.buttLearn {
+    color: rgb(100,100,100);
+}
+.buttLearn:hover {
+    color: rgb(20,119, 214);
+}
+.buttLearn:active {
+    color: rgb(20,119, 214);
+}
+#currentIntro #currentIntro,
+#currentColorArray #currentColorArray,
+#currentIntervals #currentIntervals,
+#currentScales #currentScales,
+#currentChords #currentChords,
+#currentMore #currentMore {
+    color: black;
+}
+.currentLearn {
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 20%, #d8d5e7 80%); 
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(20%,#ffffff), color-stop(80%,#d8d5e7));
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%);
+    background: -o-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%);
+    background: -ms-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%);
+    background: radial-gradient(ellipse at center,rgb(255,255,255),rgb(190,190,220));
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1550px 1000px;
+}
+#header {
+    color: rgb(52,52,52);
+}
+.bodytext {
+    color: rgb(52,52,52);
+    position: relative; bottom: 80px;
+}
+#introNav {
+    height:264px;
+    width:1024px;
+    position: relative; bottom: 120px;
+}
+/*ICONS*/
+#colorArrayIcon td, #intervalsIcon td, #scalesIcon td, #chordsIcon td {
+    width: 35px;
+    height: 35px;
+    border: 1px solid transparent;
+    background: white;
+    position: relative; top: 10px;
+}
+/*COLOR ARRAY ICON*/
+#colorArrayIcon td:nth-child(1) {
+    background: rgb(255,255,11);
+}
+#colorArrayIcon td:nth-child(2) {
+    background: rgb(255,198,0);
+}
+#colorArrayIcon td:nth-child(3) {
+    background: rgb(255,153,0);
+}
+#colorArrayIcon td:nth-child(4) {
+    background: rgb(255,100,0);
+}
+#colorArrayIcon td:nth-child(5) {
+    background: rgb(255,0,100);
+}
+#colorArrayIcon td:nth-child(6) {
+    background: rgb(219,0,215);
+}
+#colorArrayIcon td:nth-child(7) {
+    background: rgb(138,0,241);
+}
+/*INTERVALS ICON*/
+#intervalsIcon td:nth-child(1) {
+    background: rgb(255,255,11);
+}
+#intervalsIcon td:nth-child(7) {
+    background: rgb(219,0,215);
+}
+/*SCALES ICON*/
+#scalesIcon td:nth-child(1) {
+    background: rgb(255,255,11);
+}
+#scalesIcon td:nth-child(2) {
+    background: rgb(255,153,0);
+}
+#scalesIcon td:nth-child(3) {
+    background: rgb(255,0,100);
+}
+#scalesIcon td:nth-child(4) {
+    background: rgb(170,255,0);
+}
+#scalesIcon td:nth-child(5) {
+    background: rgb(255,198,0);
+}
+#scalesIcon td:nth-child(6) {
+    background: rgb(255,100,0);
+}
+#scalesIcon td:nth-child(7) {
+    background: rgb(219,0,215);
+}
+/*CHORDS ICON*/
+#chordsIcon td:nth-child(1) {
+    background: rgb(255,255,11);
+}
+#chordsIcon td:nth-child(3) {
+    background: rgb(255,0,100);
+}
+#chordsIcon td:nth-child(5) {
+    background: rgb(255,198,0);
+}
+#chordsIcon td:nth-child(7) {
+    background: rgb(219,0,215);
+}
+.introButt {
+    display: inline-block;
+    border-radius:3px;
+    background: -webkit-linear-gradient(rgb(48,48,48),rgb(21,21,21));
+    background: -o-linear-gradient(rgb(48,48,48),rgb(21,21,21));
+    background: -moz-linear-gradient(rgb(48,48,48),rgb(21,21,21));
+    background: linear-gradient(rgb(78,78,78),rgb(31,31,31));
+    height:200px;
+    width:254px;
+    margin:1px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+}
+.introButtHead {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 48px;
+    color: white;
+    text-decoration: none;
+    position: relative; top: 30px;
+}
+.introButtDescrip {
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    font-size: 36px;
+    color: gray;
+    text-decoration: none;
+    position: relative; top: 30px;
+}
+.introButt:hover, .howUseButt:hover {
+    background: -webkit-radial-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: -o-radial-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: -moz-radial-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: radial-gradient(rgb(31,31,31),rgb(78,78,78));
+}
+.introButt:active, .howUseButt:active {
+    background: -webkit-linear-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: -o-linear-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: -moz-linear-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: linear-gradient(rgb(31,31,31),rgb(78,78,78));
+}
+/*HOW USE APP*/
+.howUseButt {
+    display:block;
+    border-radius:3px;
+    background: -webkit-linear-gradient(rgb(48,48,48),rgb(21,21,21));
+    background: -o-linear-gradient(rgb(48,48,48),rgb(21,21,21));
+    background: -moz-linear-gradient(rgb(48,48,48),rgb(21,21,21));
+    background: linear-gradient(rgb(78,78,78),rgb(31,31,31));
+    height:80px;
+    width: 1024px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    position: relative; 
+}
+.howUseButt:hover {
+    background: -webkit-radial-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: -o-radial-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: -moz-radial-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: radial-gradient(rgb(31,31,31),rgb(78,78,78));
+}
+.howUseButt:active {
+    background: -webkit-linear-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: -o-linear-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: -moz-linear-gradient(rgb(21,21,21),rgb(48,48,48));
+    background: linear-gradient(rgb(31,31,31),rgb(78,78,78));
+}
+.howUseHead {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 48px;
+    color: white;
+    text-decoration: none;
+    position: relative; top: 15px;
+}
+.howUseDescrip {
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    font-size: 36px;
+    color: gray;
+    text-decoration: none;
+    position: relative; top: 15px;
+}

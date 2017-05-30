@@ -118,14 +118,15 @@
         </defs>
     </svg>
     <div class="container">
+        <h1 style="padding-top:4rem;"> </h1>
         <header>
             <div class="clearfix float-right">
-                <p class="date">May 29, 2017 </p>
+                <p class="date">May 30, 2017 </p>
             </div>
         </header>
         <div>
             <h1>Special Relativity</h1>
-            <h4>todo: com, hr, insert images with good colors</h4>
+            <hr>
             <link rel="stylesheet" href="./transform/noUiSlider.10.0.0/nouislider.min.css">
             <link rel="stylesheet" href="./transform/index.css">
             <script src="./transform/noUiSlider.10.0.0/nouislider.js" async=""></script>
@@ -140,9 +141,9 @@
                 <canvas id="basic-trans" width="300" height="300"></canvas>
                 <canvas id="inverse-trans" width="300" height="300"></canvas>
             </div>
-            <com>
+            <blockquote>
                 <p>This article explores the concept of special relativity by posing a paradox and then mathematically deriving its solution. Ease with algebra and familiarity with linear algebra is recommended.</p>
-            </com>
+            </blockquote>
             <h2>Finding a little problem</h2>
             <p>In 1887 the Michelson-Morley experiment unexpectedly showed that light travels with the same speed regardless of the observer's position or velocity. This idea of constancy of the speed of light presented a problem for physics. Consider a
                 scenario from the perspective of Observer-1. Observer-1, Observer-2, and a beam of light all begin at time zero at position zero. Observer-2 then moves in a straight line with velocity
@@ -156,6 +157,7 @@
                         </g>
                     </svg>
                 </span> relative to Observer-1. At the same time, the light beam moves in the same direction as Observer-2, as illustrated in <code>Figure 1</code>.</p>
+            <img src="scenario.svg" onerror="this.src='scenario.png'">
             <p>The light beam will move at the speed of light,
                 <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-2-Frame">
                     <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.007ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 433.5 721.6" role="img" focusable="false">
@@ -247,6 +249,7 @@
                         </g>
                     </svg>
                 </span>-axis, satisfying this equality is seemingly impossible.</p>
+            <img src="graph.svg" onerror="this.src='graph.png'">
             <p>To resolve this conflict we must examine and reconsider our assumptions. Here are some important assumptions.</p>
             <ul>
                 <li>
@@ -1548,9 +1551,9 @@
                         </g>
                     </svg>
                 </span>.</p>
-            <com>
+            <blockquote>
                 <p>Knowing matrix multiplication is helpful, if not necessary, for understanding the remaining content. A resource is <code>https://www.mathsisfun.com/algebra/matrix-multiplying.html</code> </p>
-            </com>
+            </blockquote>
             <h3>Transformation of space</h3>
             <p>To narrow possibilities let us apply the third restriction. That is, when
                 <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-92-Frame">
@@ -3129,7 +3132,7 @@
             <p>The best way to understand the Lorentz and inverse Lorentz transformations and how they provide a solution the scenario is to take the time to understand the diagrams at the top of this article.</p>
             <hr>
             <h2>Understanding the diagrams</h2>
-            <p>At the top of this article are two interactive diagrams. The $color2 grids are the coordinate systems for Observer-1; we will call these the base frames. The $color1 grids are the coordinate systems for Observer-2; we will call these the prime
+            <p>At the top of this article are two interactive diagrams. The gray grids are the coordinate systems for Observer-1; we will call these the base frames. The violet grids are the coordinate systems for Observer-2; we will call these the prime
                 frames. Once we understand the coordinates for these frames it is easy to understand the displacements for these frames because displacements are simply changes in coordinates. Proceeding, we only consider coordinates, that is we drop
                 the deltas and only consider the symbols. That is,
                 <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-172-Frame">
@@ -3213,12 +3216,12 @@
                 identical lines. But as we know the prime frame is not necessarily the same as the basic frame, but may well be different due to our dropped assumption. In order to view the necessarily correct prime frame in terms of the base frame, we
                 must appropriately transform our currently uniform prime frame. We must convert all coordinates within the uniform prime frame into coordinates within the basic frame. Converting prime coordinates to basic coordinates can be done by inserting
                 the prime coordinates into the
-                <em>inverse</em> Lorentz transformation, or mulitplying them by the inverse matrix. The $color1 grid shows the transformed prime frame. Counterintuitively, the diagram illustrates the Lorentz transformation by applicaiton of the inverse Lorentz
+                <em>inverse</em> Lorentz transformation, or mulitplying them by the inverse matrix. The violet grid shows the transformed prime frame. Counterintuitively, the diagram illustrates the Lorentz transformation by applicaiton of the inverse Lorentz
                 transformation.</p>
             <h3>Inverse transformation diagram</h3>
             <p>Second we examine the inverse Lorentz transformation illustrated in the right diagram. This diagram does
                 <em>not</em> reflect the perspective of Observer-2. This diagram reflects the perspective of Observer-1, illustrating coordinates for Observer-1 relative to coordinates for Observer-2. In order to show the base frame relative to the prime
-                frame, all coordinates within the base frame are inserted into the Lorentz transformation or multiplied by the transformation matrix. The $color2 grid shows the transformed base frame. Counterintuitively, the diagram illustrates the inverse
+                frame, all coordinates within the base frame are inserted into the Lorentz transformation or multiplied by the transformation matrix. The gray grid shows the transformed base frame. Counterintuitively, the diagram illustrates the inverse
                 Lorentz transformation by use of the Lorentz transformation.</p>
             <h3>Interacting with the diagram</h3>
             <p>The speed of light,

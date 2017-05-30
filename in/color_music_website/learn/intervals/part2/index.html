@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    <head>
+        <title>Intervals</title>
+        
+        <meta name="description" content="Intervals">
+        <meta name="author" content="Conor Parrish" ,"Joseph Johnston" ,"Akira Youngblood">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="../../../reset.css">
+    	<link rel="stylesheet" href="../../../style.css">
+    	<link rel="stylesheet" href="../../style.css">
+    	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="../../../graphics/keyboards/fifthsKeyboard.css">
+    	
+    </head>
+    
+    <body class="currentLearn" id="currentIntervals">
+        <div id="wrapper">
+		    
+		    <div id="navbar">
+		        <table>
+		            <tr>
+		                <td>
+		                    <a class="button" id="home" href="../../../index.html">Home</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="play" href="http://mudcu.be/piano/" target="_blank">Play</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="learn" href="../../intro/index.html">Learn</a>
+		                </td>
+	                    <td>
+		                    <a class="button" id="store" href="../../../store/index.html">Store</a>
+	                    </td>
+                    </tr>
+	            </table>
+            </div>
+            
+            <table id="subnav">
+                <tr>
+                    <td>
+                        <a class="buttLearn" id="currentIntro" href="../../intro/index.html">Introduction</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                       <a class="buttLearn" id="currentColorArray" href="../../colorArray/index.html">Color Array</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentIntervals" href="../part1/index.html">Intervals</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentScales" href="../../scales/part1/index.html">Scales</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentChords" href="../../chords/part1/index.html">Chords</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentMore" href="../../howToUse/index.html">Using the App</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <div id="subMenuLine"></div>
+            
+            <!--INTERVALS SUBMENU-->
+            <table id="subIntNav">
+                <tr id="currentInt2">
+                    <td>
+                        <p class="subsub2">Part:</p>
+                    </td>
+                    <td id="subIntNavE"></td>
+                    <td>
+                        <a class="buttInt2" id="currentInt1" href="../part1/index.html">1</a>
+                    </td>
+                    <td id="subIntNavE"></td>
+                    <td>
+                        <a class="buttInt2" id="currentInt2" href="index.html">2</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <div id="header">
+                <p>Octave</p>
+            </div>
+            
+            <div id="subheader">
+                <p>Relative to the note C.</p>
+            </div>
+            <a href="#" onclick="return false;" id="clickMe">Click Me</a>
+        
+            <!--CONTENT-->
+            <div id="container">
+               
+                <div id="fiTitle">
+                    <p id="fiHeader">Circle of<br>Fifths</p>
+                    <p id="fiSubheader">Order of notes<br>following the<br>order of colors.</p>
+                </div>
+                <div id="chTitle">
+                    <p id="chHeader">Chromatic<br>Circle</p>
+                    <p id="chSubheader">Order of notes<br>as they appear<br>on the piano.</p>
+                </div>
+                
+                <div class="block">
+                    <!--CIRCLE OF FIFTHS-->
+                    <div id="fifthsWrapper">
+                        <div id="fiReference">
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiC"><p>C</p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiG"><p>G</p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiD"><p>D</p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiA"><p>A</p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiE"><p>E</p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiB"><p>B</p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiGb"><p>G<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiDb"><p>D<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiAb"><p>A<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiEb"><p>E<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiBb"><p>B<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "ficircles" id="fiF"><p>F</p></a>
+                            <div id="fiHollowCircle"></div>
+                        </div>
+                    </div>
+                    
+                    <!--CHROMATIC CIRCLE-->
+                    <div id="chromWrapper">
+                        <div id="chReference">
+                            <a href="#" onclick="return false;" class= "chcircles" id="chC"><p>C</p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chG"><p>G</p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chD"><p>D</p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chA"><p>A</p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chE"><p>E</p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chB"><p>B</p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chGb"><p>G<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chDb"><p>D<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chAb"><p>A<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chEb"><p>E<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chBb"><p>B<span>b</span></p></a>
+                            <a href="#" onclick="return false;" class= "chcircles" id="chF"><p>F</p></a>
+                            <div id="chHollowCircle"></div>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div class="block">
+                    <div class="wide">
+                        <p class="bodytext" id="description1"></p>
+                    </div>
+                </div>
+                
+                <div>
+                    <table id="harpGroup">
+                        <tr>
+                            <td id="leng">
+                                <p id="fracTopL">1</p> <div id="fracLineL"></div> <p id="fracBottomL">2</p> <p id="timesL">X</p>
+                                <div id="lineLeftL"></div> <p id="theL">the</p> <div id="lineRightL"></div>
+                                <p id="lengL">Length</p>
+                                <p id="ofLowestL">Of the Lowest<br>String (C)</p>
+                            </td>
+                            <td id="uglyHarp">
+                                <canvas id="canvasUH" width="566" height="566">Canvas not supported</canvas>
+                            </td>
+                            <td id="freq">
+                                <p id="fracTopR">2</p> <div id="fracLineR"></div> <p id="fracBottomR">1</p> <p id="timesR">X</p>
+                                <div id="lineLeftR"></div> <p id="theR">the</p> <div id="lineRightR"></div>
+                                <p id="freqR">Frequency</p>
+                                <p id="ofLowestR">Of the Lowest<br>String (C)</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper2">
+            <div id="container2">
+                <table width="1045" align="center">
+                    <tr id="emptyRow"></tr>
+                    <tr>
+                        <td id="waveLeft" align="center">
+                            <canvas id="canvasLeft" width="500" height="200">Canvas not supported</canvas>
+                        </td>
+                        <td id="waveLine" align="center"></td>
+                        <td id="waveRight" align="center">
+                            <canvas id="canvasRight" width="500" height="200">Canvas not supported</canvas>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>    
+        <div id="wrapper3">
+            <div id="container3"> 
+                <table>
+                    <tr id="descriptionEmptyRow">
+                    <tr class="block" id="Description2and3">
+                        <td id="descriptionEmptySides"></td>
+                        <td class="bodytext" id="description2"></td>
+                        <td id="descriptionEmptyMiddle"></td>
+                        <td class="bodytext" id="description3"></td>
+                        <td id="descriptionEmptySides"></td>
+                    </tr>
+                    <tr id="descriptionEmptyRow">
+                </table>
+            </div>   
+        </div>
+        <div id="wrapper4">
+            <div id="container4">  
+                <div id="intervalMarker">
+                    <canvas id="canvasIM" width="1045" height="200">Canvas not supported</canvas>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper3">
+            <div id="container3">  
+                <table align="center">
+                    <tr>
+                        <td id="fifthsKeyboard" align="center">
+                            <div class="fC" id="bottom"></div>
+                            <div class="fC" id="topBig"></div>
+                            <div class="fG" id="bottom"></div>
+                            <div class="fG" id="topSmall"></div>
+                            <div class="fD" id="bottom"></div>
+                            <div class="fD" id="topHuge"></div>
+                            <div class="fA" id="bottom"></div>
+                            <div class="fA" id="topSmall"></div>
+                            <div class="fE" id="bottom"></div>
+                            <div class="fE" id="topBig"></div>
+                            <div class="fB" id="bottom"></div>
+                            <div class="fB" id="topMiddle"></div>
+                            <div class="fGb" id="blackSmall"></div>
+                            <div class="fDb" id="blackBig"></div>
+                            <div class="fAb" id="blackBig"></div>
+                            <div class="fEb" id="blackBig"></div>
+                            <div class="fBb" id="blackSmall"></div>
+                            <div class="fF" id="bottom"></div>
+                            <div class="fF" id="topMiddle"></div>
+                        </td>
+                        <td id="emptyKeyboard"></td>
+                        <td id="fifthsKeyboard" align="center">
+                            <div class="fC" id="bottom"></div>
+                            <div class="fC" id="topBig"></div>
+                            <div class="fG" id="bottom"></div>
+                            <div class="fG" id="topSmall"></div>
+                            <div class="fD" id="bottom"></div>
+                            <div class="fD" id="topHuge"></div>
+                            <div class="fA" id="bottom"></div>
+                            <div class="fA" id="topSmall"></div>
+                            <div class="fE" id="bottom"></div>
+                            <div class="fE" id="topBig"></div>
+                            <div class="fB" id="bottom"></div>
+                            <div class="fB" id="topMiddle"></div>
+                            <div class="fGb" id="blackSmall"></div>
+                            <div class="fDb" id="blackBig"></div>
+                            <div class="fAb" id="blackBig"></div>
+                            <div class="fEb" id="blackBig"></div>
+                            <div class="fBb" id="blackSmall"></div>
+                            <div class="fF" id="bottom"></div>
+                            <div class="fF" id="topMiddle"></div>
+                        </td>
+                        <td id="emptyKeyboard"></td>
+                        <td id="fifthsKeyboard" align="center">
+                            <div class="fC" id="bottom"></div>
+                            <div class="fC" id="topBig"></div>
+                            <div class="fG" id="bottom"></div>
+                            <div class="fG" id="topSmall"></div>
+                            <div class="fD" id="bottom"></div>
+                            <div class="fD" id="topHuge"></div>
+                            <div class="fA" id="bottom"></div>
+                            <div class="fA" id="topSmall"></div>
+                            <div class="fE" id="bottom"></div>
+                            <div class="fE" id="topBig"></div>
+                            <div class="fB" id="bottom"></div>
+                            <div class="fB" id="topMiddle"></div>
+                            <div class="fGb" id="blackSmall"></div>
+                            <div class="fDb" id="blackBig"></div>
+                            <div class="fAb" id="blackBig"></div>
+                            <div class="fEb" id="blackBig"></div>
+                            <div class="fBb" id="blackSmall"></div>
+                            <div class="fF" id="bottom"></div>
+                            <div class="fF" id="topMiddle"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="popup" class="block">
+                    <a href="#" onclick="return false;">X</a>
+                    <p class="bodyheader">How to Use</p>
+                    <p class="bodytext">
+                        Click on any small circle inside either of the two big circles to see the interval
+                        relationship that particular note holds with C. We will call the note you click on
+                        the 'focus' note. Move around the circle on the left in the clockwise direction to
+                        read the tutorials below in the order of the circle of fifths. The circle of fifths
+                        is displayed on the left so that you can see the relationship of the focus note to
+                        C in terms of their colors. The chromatic circle is displayed on the right so you 
+                        can see the relationship of the focus note and C in terms of their relative 
+                        position on the piano. Scroll down to see details regarding the string length
+                        and frequency of the focus note relative to bottom C (the lowest string). 
+                        Continue scrolling and you will see two ‘blocks’ of frequencies illustrating 
+                        sound waves. Examine these blocks closely. The less often the two frequencies 
+                        in a block meet together at the top of their wave, the more complex their
+                        mathematical relationship and thus the more dissonant the interval. The block 
+                        on the left shows the frequency of the focus note layered on top of the frequency 
+                        of the bottom C (the lowest string). The block on the right shows the frequency of 
+                        the focus note layered on top of the frequency of the top C (the highest string). 
+                        We include this second block regarding the top string because, as you will see on 
+                        the keyboard below the sound waves, the focus note not only forms an interval with 
+                        the C below it, but also with the C above it. This other interval formed by the 
+                        focus note and the top C is the 'reciprocal' of the interval formed by the focus
+                        note and the bottom C. Reciprocals will be discussed on this page. As you probably
+                        sense, this section is complex. It is aimed at demonstrating the mathematical 
+                        precision of how notes of different colors form different intervals with different
+                        degrees of harmony and dissonance.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--SCRIPTS-->
+        <script src="../../../jquery.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

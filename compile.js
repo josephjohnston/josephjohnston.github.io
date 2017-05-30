@@ -1,1 +1,1 @@
-// require('../joe-process')();
+require('../joe-process')();

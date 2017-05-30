@@ -11,12 +11,12 @@ Diagram.prototype = {
     $.height = window.innerHeight;
     // colors
     $.backColor = '#2a4556';
-    $.bottomColor = '#47725b';
-    $.indicatorColor = '#6696a8';
-    $.textBoxColor = '#4f5aad';
-    $.boxSideColor = '#8290ff';
-    $.fontColor = '#edeeff';
-    $.circleColor = '#1c76ed';
+    $.bottomColor = '#477266';
+    $.indicatorColor = '#3f7084';
+    $.textBoxColor = '#325968';
+    $.boxSideColor = '#3f7084';
+    $.fontColor = '#bed4d8';
+    $.circleColor = '#73a7bc';
     $.insideShadowColor = '#3f3f3f';
     $.outsideShadowColor = '#6d6d6d';
     // frame
@@ -29,7 +29,7 @@ Diagram.prototype = {
     $.frameTop = $.upperHeight;
     $.indicatorHeight = $.frameHeight/12;
     // title
-    $.fontSize = Math.floor($.upperHeight/24);
+    $.fontSize = Math.floor($.upperHeight/28);
     $.fontFamily = 'Roboto';
     $.titleLeft = $.width/2+25// + $.width/12;
     $.titleTop = $.upperHeight*1/4//-$.fontSize*2;
@@ -212,41 +212,42 @@ Diagram.prototype = {
       .style('position','absolute')
       .style('width',$.width+'px')
       .style('height',$.height+'px')
-      .style('background','blue')
+      .style('background','#477266')
     var box = $.loadCover.append('div')
       .style('position','absolute')
       .style('left',$.width/3+'px')
       .style('top',$.height/3+'px')
       .style('width',$.width/3+'px')
       .style('height','px')
-    box.append('h2')
-      .attr('align','center')
-      .text('Disclaimer')
     box.append('p')
       .attr('align','center')
-      .text('The info in this interactive comes, almost word for word, from History Channels\'s documentary History of the World in 2 Hours. The music is the theme song of the movie Gladiator.')
+      .text('Loading...')
+      .attr('style','font-size:34px;color:#c9dde5;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;')
     box.append('p')
       .attr('align','center')
-      .text('Click to continue.')
-    $.loadCover.on('click',function() {
-      $.disclaimed = true
-      $.enter();
-    })
+      .text('The info in this interactive comes, almost word for word, from BBC\'s 2015 documentary "History of the World in 2 Hours." The music is the theme song of the movie Gladiator.')
+      .attr('style','font-size:20px;color:#c9dde5;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;')
+    // box.append('p')
+    //   .attr('align','center')
+    //   .text('Click anywhere to continue.')
+    //   .attr('style','font-size:20px;color:#c9dde5;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;')
+    // $.loadCover.on('click',function() {
+    //   $.disclaimed = true;
+    //   // $.enter();
+    // })
   },
   enter: function() {
-    if($.disclaimed==true && $.loaded==true) {
-      var audio = new Audio('gladiator.mp3')
-      audio.loop = true
-      // audio.play()
+    if(/*$.disclaimed==true && */$.loaded==true) {
+      // $.audio.play()
       // reset top bar
-      document.getElementById('top-bar').innerHTML = 'Use mousepad or left and right arrow keys';
+      document.getElementById('top-bar').innerHTML = 'use mousepad or left and right arrow keys';
       $.setStage()
-      // $.loadCover
-      //   .transition().ease(d3.easeLinear)
-      //   .style('opacity',0)
-      //   .on('end',function() {
-      //     $.loadCover.remove();
-      //   })
+      $.loadCover
+        .transition().ease(d3.easeLinear)
+        .style('opacity',0)
+        .on('end',function() {
+          $.loadCover.remove();
+        })
       $.switch();
       $.circles
         .transition()
@@ -293,15 +294,17 @@ Diagram.prototype = {
         $.imageRatios.push(width/height)
         $.images.push(file.documentElement)
       })
-      $.loaded = true
+      $.loaded = true;
       $.enter();
     })
   },
   init: function() {
     $.setVariables();
+    $.audio = new Audio('gladiator.mp3')
+    $.audio.loop = true;
     d3.json('./events/data.json',function(error,data) {
-      // $.makeLoadCover();
-      $.disclaimed = true
+      $.makeLoadCover();
+      // $.disclaimed = true
       $.processData(data)
     });
   }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    <head>
+        <title>Color Piano</title>
+        
+        <meta name="description" content="Color Piano Store">
+        <meta name="author" content="Conor Parrish" ,"Joseph Johnston" ,"Akira Youngblood">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="reset.css">
+    	<link rel="stylesheet" href="style.css">
+    	
+    </head>
+    
+    <body class="currentHome">
+        <div id="wrapper">
+		    
+		    <div id="navbar">
+		        <table>
+		            <tr>
+		                <td>
+		                    <a class="button" id="home" href="index.html">Home</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="play" href="#" target="_blank">Play</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="learn" href="learn/intro/index.html">Learn</a>
+		                </td>
+	                    <td>
+		                    <a class="button" id="store" href="store/index.html">Store</a>
+	                    </td>
+                    </tr>
+	            </table>
+            </div>
+            
+            <div id="container">
+                <div id="header">
+                    <p>Color Piano</p>
+                </div>
+                <div id="subheader">
+                    <p>Learning piano, intuitively.</p>
+                </div>
+                
+                <img id="appShot" src="images/colorPiano.png">
+                <canvas class="block" id="computerScreen" width="800" height="700">Canvas not supported.</canvas>
+                <a href="" onclick="return false;" style="text-decoration:none" id="aboutButt">About</a>
+                <a href="" onclick="return false;" style="text-decoration:none" id="contactButt">Contact</a>
+                 
+                <div id="aboutDescrip">
+                    <h1>Who we are.</h1>
+                    <p>
+                        Color Piano is the beginning of a new approach to music education. Our unusual application of 
+                        colors is designed to make the learning process meaningful and interesting. The tutorials on 
+                        our website introduce the concepts and tools you’ll need to understand music theory, while our 
+                        app provides a fun way to practice what you’ve learned. We soon hope to offer more features in 
+                        the app and more content in the tutorials. Your suggestions regarding these developments are 
+                        greatly appreciated and can be sent through the form on the right. Our goal is to provide you 
+                        with an engaging way to learn piano. We’re just getting started.
+                    </p>
+                </div>
+                <div id="contactDescrip">
+                    <form id="form" method="post" action="feedback.php">
+                        <p>Talk to us!</p>
+                        <label>
+                            <input id="name" type="text" name="name" placeholder="Name"/>
+                        </label>
+                        <label>
+                            <input id="email" type="text" name="from" placeholder="Email"/>
+                        </label>
+                        <label>
+                            <textarea id="feedback" name="feedback" placeholder="Message"></textarea>
+                        </label>
+                        <label>
+                            <input id="submit" type="button" value="Submit"/>
+                        </label>
+                    </form>
+                </div>
+                <div id="returnTop">
+                    <a href="#" onclick="return false;" style="text-decoration:none">Return to top</a>
+                </div>
+                <!--USE CHROME-->
+                <div id="popup" class="block">
+                    <a href="#" onclick="return false;">X</a>
+                    <div id="useChrome">
+                        <img id="chromeLogo" src="images/ChromeLogo.png" alt="Chrome Logo" height="150" width="150">
+                        <div>
+                            <a id="downloadChrome" href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Download<br>Chrome</a>
+                        </div>
+                    </div>
+                    <p class="bodyheader">Use Chrome</p>
+                    <p class="bodytext">We strongly recommend you use Google Chrome Browser to play
+                    this app. Chrome lends higher quality sound than other browsers and also loads the app more easily. 
+                    Click below to download Chrome. Once you have downloaded Chrome, return to colorpiano.com and click 
+                    ‘Play’ once more.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

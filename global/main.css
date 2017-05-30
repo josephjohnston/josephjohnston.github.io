@@ -32,7 +32,8 @@ blockquote {
   border-left: 0.3rem solid #d1d1d1;
   margin-left: 0;
   margin-right: 0;
-  padding: 1rem 1.5rem; }
+  padding: 1rem 1.5rem;
+  background: #f2f2f2; }
   blockquote *:last-child {
     margin: 0; }
 
@@ -258,9 +259,9 @@ pre {
 
 hr {
   border: 0;
-  border-top: 0.1rem solid #f4f5f6;
-  margin-bottom: 3.5rem;
-  margin-top: 3rem; }
+  border-top: .2rem dotted #9b4eca;
+  margin-bottom: 4rem;
+  margin-top: 4.5rem; }
 
 input[type='email'],
 input[type='number'],
@@ -444,9 +445,6 @@ ul {
 
 dl {
   list-style: none; }
-
-ul {
-  list-style: circle inside; }
 
 dt,
 dd,

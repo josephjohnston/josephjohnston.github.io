@@ -1,0 +1,42 @@
+#chromWrapper {
+    width: 540px;
+    height: 540px;
+}
+#chReference {
+    width: 427px;
+    height: 427px;
+    position: absolute;
+    left: 56px;
+    top: 56px;
+}
+
+.chcircles {
+    width:108px;
+    height:108px;
+	-webkit-border-radius: 56px;
+	-moz-border-radius: 56px;
+	border-radius: 56px;
+	position: absolute;
+	z-index: 1;
+}
+.chcircles p {
+    font-family:'HelveticaNeue-CondensedBlack',sans-serif;
+    color:#fff;
+    text-align:center;
+    padding-top:12px;
+    font-size:80px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+#chHollowCircle {
+    width:310px;
+    height:310px;
+    -webkit-border-radius: 310px;
+    -moz-border-radius: 310px;
+    border-radius: 281px;
+    border: solid 117px;
+    border-color: white;
+    position: relative; right: 58px; bottom: 58px;
+}
+span {
+    font-size: 40px;
+}

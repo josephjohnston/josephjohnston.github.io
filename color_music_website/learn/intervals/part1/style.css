@@ -1,0 +1,236 @@
+body {
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 20%, #d8d5e7 80%), -moz-linear-gradient(top,  #ffffff 20%, rgb(240,240,240) 80%); 
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(20%,#ffffff), color-stop(80%,#d8d5e7)), -webkit-gradient(linear, left top, left bottom, color-stop(20%,#ffffff), color-stop(80%,rgb(240,240,240)));
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%), -webkit-linear-gradient(top,  #ffffff 20%,rgb(240,240,240) 80%);
+    background: -o-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%), -o-linear-gradient(top,  #ffffff 20%,rgb(240,240,240) 80%);
+    background: -ms-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%), -ms-linear-gradient(top,  #ffffff 20%,rgb(240,240,240) 80%);
+    background: radial-gradient(ellipse at center,  #ffffff 20%,rgb(190,190,220) 80%), linear-gradient(to bottom,  #ffffff 20%,rgb(230,230,230) 80%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 0, center, 1010px;
+    background-size: 1550px 1010px, 1550px 1550px;
+}
+#popup {
+    bottom: 3170px;
+}
+#bodytextChrome {
+    color: rgb(150,150,150);
+}
+#header {
+    color: black;
+    margin: 10px 0 0 0; 
+}
+#subheader {
+    color: rgb(150,150,150);
+}
+/*LEARN SUBMENU*/
+.buttLearn {
+    color: rgb(100,100,100);
+}
+.buttLearn:hover {
+    color: rgb(20,119, 214);
+}
+.buttLearn:active {
+    color: rgb(20,119, 214);
+}
+#currentIntro #currentIntro,
+#currentColorArray #currentColorArray,
+#currentIntervals #currentIntervals,
+#currentScales #currentScales,
+#currentChords #currentChords,
+#currentMore #currentMore {
+    color: black;
+}
+/*TEXT REVISIONS*/
+.bodyheader {
+    color: black;
+    margin: 0 0 22px 40px;
+}
+.bodytext {
+    color: rgb(52,52,52);
+    font-size: 20px;
+    width: 1010px;
+}
+.block {
+    margin: 80px 20px 80px 0;
+    text-align: center;
+}
+/*'HARMONY AND DISSONANCE' SECTION*/
+#intervalCircleWrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; left: 90px; bottom: 320px;
+    margin: 60px 80px -100px 0;
+}
+#harmonious {
+    font-family: "HelveticaNeue-Light","HelveticaNeue-Thin",sans-serif;
+    font-size: 40px;
+    position: relative; float: left; left: 10px; top: 100px;
+    color: rgb(0,199,166);
+    text-align: center;
+}
+#dissonant {
+    font-family: "HelveticaNeue-Light","HelveticaNeue-Thin",sans-serif;
+    font-size: 40px;
+    position: relative; float: right; right: 50px; top: 100px;
+    color: rgb(219,0,215);
+    text-align: center;
+}
+#harmAndDissPara {
+    right: 12px;
+}
+#harmonyAndDissonance {
+    position: relative; right: 88px; top: 332px;
+    z-index: 0;
+}
+/*HARP GROUP*/
+#harpGroup {
+    width: 1024px;
+    position: relative; top: -50px; left: 13px;
+}
+/*HARP*/
+#uglyHarp {
+    width: 480px;
+    height: 480px;
+    vertical-align: middle;
+    position: relative; left: 4px;
+}
+/*GETERAL SPECIFICATIONS FOR TEXT LEFT AND RIGHT OF HARP*/
+#lineLeftL, #lineLeftR, #lineRightL, #lineRightR {
+    width: 67px;
+    height: 3px;
+    background-color: rgb(52,52,52);
+}
+#ofLowestL, #ofLowestR {
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    font-size: 36px;
+    color: rgb(150,150,150);
+}
+#theL, #theR {
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-Light",sans-serif;
+    font-size: 40px;
+}
+#fracDoubleTop {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;;
+    font-size: 54px;
+    position: relative; bottom: 2px;
+}
+#fracDoubleBottom {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;;
+    font-size: 54px;
+    position: relative;
+}
+/*LEFT SIDE OF HARP TEXT*/
+#leng {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;;
+    color: rgb(52,52,52);
+    vertical-align: middle;
+    position: relative; left: 50px;
+}
+#fracTopL {
+    font-size: 54px;
+    position: relative; bottom: 2px; left: -85px;
+}
+#fracLineL {
+    width: 50px;
+    height: 6px;
+    background-color: rgb(52,52,52);
+    position: relative;
+}
+#fracBottomL {
+    font-size: 54px;
+    position: relative; left: -85px;
+}
+#timesL {
+    font-size: 101px;
+    position: relative; bottom: 108px; left: -30px;
+}
+/*POSITION "THE" AND MIDDLE LINES FOR BOTH LEFT AND RIGHT TEXT OF HARP*/
+#lineLeftL, #lineLeftR {
+    position: relative; bottom: 78px; right: 50px;
+}
+#theL {
+    position: relative; bottom: 100px; left: -54px;
+}
+ #theR {
+    position: relative; bottom: 100px; left: -62px;
+}
+#lineRightL, #lineRightR {
+    position: relative; bottom: 121px; left: 96px;
+}
+#lengL {
+    font-size: 59px;
+    position: relative; bottom: 100px; right: 55px;
+}
+/*POSITION "OF LOWEST STRING" FOR BOTH LEFT AND RIGHT TEXT OF HARP*/
+#ofLowestL, #ofLowestR {
+    text-align: center;
+    position: relative; bottom: 80px; right: 60px;
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-Light",sans-serif;
+}
+/*RIGHT SIDE OF TEXT OF HARP*/
+#freq {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;;
+    color: rgb(52,52,52);
+    vertical-align: middle;
+    position: relative; left: 64px; top: -5px;
+}
+#fracTopR {
+    font-size: 54px;
+    position: relative; bottom: 2px; left: -92px;
+}
+#fracLineR {
+    width: 50px;
+    height: 6px;
+    background-color: rgb(52,52,52);
+    position: relative;
+}
+#fracBottomR {
+    font-size: 54px;
+    position: relative; left: -92px;
+}
+#timesR {
+    font-size: 101px;
+    position: relative; bottom: 108px; left: -40px;
+}
+#freqR {
+    font-size: 52px;
+    position: relative; bottom: 100px; right: 65px;
+}
+/*ALL THE SAME*/
+#byExamining {
+    width: 960px;
+    text-align:center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 150%;
+    margin: 0 0 20px 0;
+}
+#allSameText {
+    margin: -50px 0 -100px 0;
+}
+#intervalArrows {
+    position: relative; left: 15px;
+}
+#fifthsKeyboard {
+    position: relative; left: 335px;
+    margin: 0 0 -175px 0;
+}
+/*FOOTER SECTION*/
+#nextArrow {
+    float: right;
+    position: absolute; bottom: 75px; right: 10px;
+}
+#pastArrow {
+    float: left;
+    position: absolute; bottom: 75px; left: 10px;
+}
+#footer {
+    color: rgb(52,52,52);
+    font-size: 20px;
+    width: 600px;
+    text-align:center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 120%;
+    margin: 50px 0 60px 0;
+}

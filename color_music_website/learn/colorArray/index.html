@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    <head>
+        <title>Color Array</title>
+        
+        <meta name="description" content="Color Array">
+        <meta name="author" content="Conor Parrish" ,"Joseph Johnston" ,"Akira Youngblood">
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="../../reset.css">
+    	<link rel="stylesheet" href="../../style.css">
+    	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="../style.css">
+    	<link rel="stylesheet" href="../../graphics/keyboards/chromKeyboard.css">
+    	<link rel="stylesheet" href="../../graphics/keyboards/fifthsKeyboard.css">
+    	<link rel="stylesheet" href="../../graphics/colorCircle/chromCircle.css">
+    	<link rel="stylesheet" href="../../graphics/colorCircle/fifthsCircle.css">
+    	<link rel="stylesheet" href="../../graphics/rearrangement/rearrangement.css">
+    
+    </head>
+    
+    <body class="currentLearn" id="currentColorArray" >
+        <div id="wrapper">
+            
+		    <!--MAIN MENU-->
+		    <div id="navbar">
+		        <table>
+		            <tr>
+		                <td>
+		                    <a class="button" id="home" href="../../index.html">Home</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="play" href="http://mudcu.be/piano/" target="_blank">Play</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="learn" href="../intro/index.html">Learn</a>
+		                </td>
+	                    <td>
+		                    <a class="button" id="store" href="../../store/index.html">Store</a>
+	                    </td>
+                    </tr>
+	            </table>
+            </div>
+            
+            <table id="subnav">
+                <tr>
+                    <td>
+                        <a class="buttLearn" id="currentIntro" href="../intro/index.html">Introduction</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                       <a class="buttLearn" id="currentColorArray" href="index.html">Color Array</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentIntervals" href="../intervals/part1/index.html">Intervals</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentScales" href="../scales/part1/index.html">Scales</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentChords" href="../chords/part1/index.html">Chords</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentMore" href="../howToUse/index.html">Using the App</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <div id="subMenuLine"></div>
+            
+            <!--HEADERS-->
+            <div id="header">
+                <p>Color Array</p>
+            </div>
+            
+            <div id="subheader">
+                <p>The meaning behind the colors.</p>
+            </div>
+            
+            <!--CONTENT-->
+            <div id="container">
+                <!--NOT JUST FOR MATCHING-->
+                <div class="block">
+                    <div id="fifthsKeyboard">
+                        <div class="fC" id="bottom"></div>
+                        <div class="fC" id="topBig"></div>
+                        <div class="fG" id="bottom"></div>
+                        <div class="fG" id="topSmall"></div>
+                        <div class="fD" id="bottom"></div>
+                        <div class="fD" id="topHuge"></div>
+                        <div class="fA" id="bottom"></div>
+                        <div class="fA" id="topSmall"></div>
+                        <div class="fE" id="bottom"></div>
+                        <div class="fE" id="topBig"></div>
+                        <div class="fB" id="bottom"></div>
+                        <div class="fB" id="topMiddle"></div>
+                        <div class="fGb" id="blackSmall"></div>
+                        <div class="fDb" id="blackBig"></div>
+                        <div class="fAb" id="blackBig"></div>
+                        <div class="fEb" id="blackBig"></div>
+                        <div class="fBb" id="blackSmall"></div>
+                        <div class="fF" id="bottom"></div>
+                        <div class="fF" id="topMiddle"></div>
+                    </div>
+                    <div class="oneTwo">
+                        <p class="bodyheader">A Distinct Pattern</p>
+                        <p class="bodytext">
+                            The <a id="appLink" href="http://mudcu.be/piano/">app</a> features one primary color array called the ‘Circle of Fifths’
+                            which the app will load by default. This primary color pattern is displayed on the keyboard to the right. 
+                            From now on, any mention of a color array, pattern, arrangement, or scheme will refer to this Circle 
+                            of Fifths color system utilized in the app. This color array serves as a meaningful tool for understanding 
+                            musical harmony. These colors allow you to view any set of notes, and by examining their colors, you can 
+                            sense how they will sound together, whether harmonious (smooth) or dissonant (rough). On this page we will 
+                            discuss how we formulated this convenient arrangement of colors.
+                        </p>
+                    </div>
+                </div>
+                
+                <!--CHROMATIC CIRCLE-->
+                <div class="block">
+                    <div class="threeFour">
+                        <p class="bodyheader">A Consistent Rearrangement</p>
+                        <p class="bodytext">
+                            To apply any pattern to the piano keys, we must first look at a rearranged order of notes on the piano, 
+                            called ‘chromatic’ order, illustrated by the ‘chromatic circle’ on the left. To demonstrate a rearrangement 
+                            of this circle, we've drawn a star inside it that jumps in a consistent way around the circle to point to 
+                            every note. If you follow the line, beginning on any note, you will see that every note is connected to 
+                            every other note through this star.
+                        </p>
+                    </div>
+                    <div id="chromWrapper">
+                        <div id="chReference">
+                            <div class= "chcircles" id="chC"><p>C</p></div>
+                            <div class= "chcircles" id="chG"><p>G</p></div>
+                            <div class= "chcircles" id="chD"><p>D</p></div>
+                            <div class= "chcircles" id="chA"><p>A</p></div>
+                            <div class= "chcircles" id="chE"><p>E</p></div>
+                            <div class= "chcircles" id="chB"><p>B</p></div>
+                            <div class= "chcircles" id="chGb"><p>G<span>b</span></p></div>
+                            <div class= "chcircles" id="chDb"><p>D<span>b</span></p></div>
+                            <div class= "chcircles" id="chAb"><p>A<span>b</span></p></div>
+                            <div class= "chcircles" id="chEb"><p>E<span>b</span></p></div>
+                            <div class= "chcircles" id="chBb"><p>B<span>b</span></p></div>
+                            <div class= "chcircles" id="chF"><p>F</p></div>
+                            <div id="chHollowCircle"></div>
+                        </div>
+                        <div id="chTwelveStar">
+                            <canvas id="canvasTS" width="300" height="300">Canvas not supported</canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--CIRCLE OF FIFTHS-->
+                <div class="block">
+                    <div id="fifthsWrapper">
+                        <div id="fiReference">
+                            <div class= "ficircles" id="fiC"><p>C</p></div>
+                            <div class= "ficircles" id="fiG"><p>G</p></div>
+                            <div class= "ficircles" id="fiD"><p>D</p></div>
+                            <div class= "ficircles" id="fiA"><p>A</p></div>
+                            <div class= "ficircles" id="fiE"><p>E</p></div>
+                            <div class= "ficircles" id="fiB"><p>B</p></div>
+                            <div class= "ficircles" id="fiGb"><p>G<span>b</span></p></div>
+                            <div class= "ficircles" id="fiDb"><p>D<span>b</span></p></div>
+                            <div class= "ficircles" id="fiAb"><p>A<span>b</span></p></div>
+                            <div class= "ficircles" id="fiEb"><p>E<span>b</span></p></div>
+                            <div class= "ficircles" id="fiBb"><p>B<span>b</span></p></div>
+                            <div class= "ficircles" id="fiF"><p>F</p></div>
+                            <div id="fiHollowCircle"></div>
+                        </div>
+                    </div>
+                    <div class="threeFour">
+                        <p class="bodyheader">A Harmonic Representation</p>
+                        <p class="bodytext">
+                            After rearranging the notes of the chromatic circle according to the star, the notes appear 
+                            in a new order pictured on the right. This new circle is called the ‘circle of fifths’ 
+                            because it is composed of fifth intervals. Any two notes represented next to each other on 
+                            the circle of fifths appear a fifth interval (seven notes) apart from each other on the 
+                            piano. This rearrangement is spectacular because notes located near to one another on the 
+                            circle of fifths sound harmonious when played together, while notes located further across 
+                            the circle of fifths from each other sound more dissonant when played together. This means 
+                            that if the physical keys of the piano were assembled in this circle of fifths order, you 
+                            could easily identify the harmonic relationship between any two notes by simply considering 
+                            their distance apart on the piano. Unfortunately, piano keys are not built that way.
+                        </p>
+                    </div>
+                </div>
+                
+                <!--PATTERN TO THE PIANO-->
+                <div class="block">
+                    <div class="wide">
+                        <p class="bodyheader">Applying a Pattern</p>
+                        <p class="bodytext">
+                            Our solution is to layer a linear pattern onto the order of notes in the circle of fifths 
+                            and use stickers to display that pattern on your piano keys. This way, when you follow the 
+                            linear pattern on the stickers, you will also follow the order of the circle of fifths. In 
+                            other words, playing notes that are close to one other in the linear pattern of the stickers 
+                            results in playing harmonious notes, while playing notes represented further apart from each 
+                            other in the linear pattern of the stickers results in more dissonant notes. What linear 
+                            pattern should we use to achieve this?
+                        </p>
+                    </div>
+                </div>
+                
+                <!--APPLYING NUMBERS-->
+                <div class="block">
+                    <div class="wide">
+                        <p class="bodyheader">Applying Numbers</p>
+                        <p class="bodytext">
+                            We could try applying the linear pattern of numbers one through twelve as shown below, and 
+                            writing the numbers on the piano stickers. This pattern, however, does not naturally loop back 
+                            on itself like the circle of fifths. Viewing these numbers on the piano, you would need to 
+                            constantly jump from twelve back to one and vice versa.
+                        </p>
+                    </div>
+                    <div id="applyingNumbers">
+                        <div id="applyingNotes1">
+                            <table>
+                                <tr>
+                                    <td id="nC"><p>C</p></td>
+                                    <td id="nG"><p>G</p></td>
+                                    <td id="nD"><p>D</p></td>
+                                    <td id="nA"><p>A</p></td>
+                                    <td id="nE"><p>E</p></td>
+                                    <td id="nB"><p>B</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="applyingNotes2">
+                            <table>
+                                <tr>
+                                    <td id="nGb"><p>G<span>b</span></p></td>
+                                    <td id="nDb"><p>D<span>b</span></p></td>
+                                    <td id="nAb"><p>A<span>b</span></p></td>
+                                    <td id="nEb"><p>E<span>b</span></p></td>
+                                    <td id="nBb"><p>B<span>b</span></p></td>
+                                    <td id="nF"><p>F</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <canvas id="canvasAP" width="1024" height="140">Canvas not supported</canvas>
+                        <div id="applyingNumbersNumbers">
+                            <div id="tableOne">
+                                <table>
+                                    <tr>
+                                        <td id="n1"><p>1</p></td>
+                                        <td id="n2"><p>2</p></td>
+                                        <td id="n3"><p>3</p></td>
+                                        <td id="n4"><p>4</p></td>
+                                        <td id="n5"><p>5</p></td>
+                                        <td id="n6"><p>6</p></td>
+                                        <td id="n7"><p>7</p></td>
+                                        <td id="n8"><p>8</p></td>
+                                        <td id="n9"><p>9</p></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="tableTwo">
+                                <table>
+                                    <tr>
+                                        <td id="n10"><p>10</p></td>
+                                        <td id="n11"><p>11</p></td>
+                                        <td id="n12"><p>12</p></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--APPLYING MONTHS-->
+                <div class="block" id="monthsEverything">
+                    <div class="wide">
+                        <p class="bodyheader">Applying Months</p>
+                        <p class="bodytext">
+                            The twelve months of the year present another possibility. Unlike numbers, this linear 
+                            pattern naturally loops on itself as December smoothly leads to January. This pattern is 
+                            obviously not suitable, however, as marking these months on piano stickers would be too 
+                            challenging. There is a better way.
+                        </p>
+                    </div>
+                    <div id="applyingMonths">
+                        <div id="applyingNotes1">
+                            <table>
+                                <tr>
+                                    <td id="nC"><p>C</p></td>
+                                    <td id="nG"><p>G</p></td>
+                                    <td id="nD"><p>D</p></td>
+                                    <td id="nA"><p>A</p></td>
+                                    <td id="nE"><p>E</p></td>
+                                    <td id="nB"><p>B</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="applyingNotes2">
+                            <table>
+                                <tr>
+                                    <td id="nGb"><p>G<span>b</span></p></td>
+                                    <td id="nDb"><p>D<span>b</span></p></td>
+                                    <td id="nAb"><p>A<span>b</span></p></td>
+                                    <td id="nEb"><p>E<span>b</span></p></td>
+                                    <td id="nBb"><p>B<span>b</span></p></td>
+                                    <td id="nF"><p>F</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <canvas id="canvasAM" width="1024" height="140">Canvas not supported</canvas>
+                        <div id="months">
+                            <div id="Jan"><p>January</p></div>
+                            <div id="Feb"><p>February</p></div>
+                            <div id="Mar"><p>March</p></div>
+                            <div id="Apr"><p>April</p></div>
+                            <div id="May"><p>May</p></div>
+                            <div id="Jun"><p>June</p></div>
+                            <div id="Jul"><p>July</p></div>
+                            <div id="Aug"><p>August</p></div>
+                            <div id="Sep"><p>September</p></div>
+                            <div id="Oct"><p>October</p></div>
+                            <div id="Nov"><p>November</p></div>
+                            <div id="Dec"><p>December</p></div>
+                        </div>
+                    </div>
+                </div>
+                
+               <!--APPLYING COLORS--> 
+                <div class="block">
+                    <div class="wide" id="applyingColorsText">
+                        <p class="bodyheader">Applying Colors</p>
+                        <p class="bodytext">
+                            The linear pattern of the color spectrum is a logical one to layer onto the circle 
+                            of fifths. This linear pattern naturally loops, and colors are easy to display on your 
+                            piano keys with stickers. Below is an illustration of the color spectrum applied to 
+                            the circle of fifths and then translated onto the piano keys. If you want to find 
+                            harmonious note combinations, play piano keys displaying colors close to each other in 
+                            the color spectrum (e.g. blue and green). If you want to play more dissonant harmony, 
+                            play keys displaying colors on opposing sides of the color spectrum (e.g. yellow and 
+                            purple). Study the pattern of these colors closely because every subsequent tutorial 
+                            will utilize this color scheme in explaining musical concepts.
+                        </p>
+                    </div>
+                    <div id="applyingColorsGraphic">
+                        <div id="referenceRE">
+                            <div class= "circlesRE" id="C"><p>C</p></div>
+                            <div class= "circlesRE" id="G"><p>G</p></div>
+                            <div class= "circlesRE" id="D"><p>D</p></div>
+                            <div class= "circlesRE" id="A"><p>A</p></div>
+                            <div class= "circlesRE" id="E"><p>E</p></div>
+                            <div class= "circlesRE" id="B"><p>B</p></div>
+                            <div class= "circlesRE" id="Gb"><p>G<span>b</span></p></div>
+                            <div class= "circlesRE" id="Db"><p>D<span>b</span></p></div>
+                            <div class= "circlesRE" id="Ab"><p>A<span>b</span></p></div>
+                            <div class= "circlesRE" id="Eb"><p>E<span>b</span></p></div>
+                            <div class= "circlesRE" id="Bb"><p>B<span>b</span></p></div>
+                            <div class= "circlesRE" id="F"><p>F</p></div>
+                            <div id="hollowCircle"></div>
+                        </div>
+                        <div id="canvasDivRE">
+                            <canvas id="canvasAC" width="1024" height="200">Canvas not supported</canvas>
+                        </div>
+                        <div id="fifthsKeyboardRE">
+                            <div class="fC" id="bottom"></div>
+                            <div class="fC" id="topBig"></div>
+                            <div class="fG" id="bottom"></div>
+                            <div class="fG" id="topSmall"></div>
+                            <div class="fD" id="bottom"></div>
+                            <div class="fD" id="topHuge"></div>
+                            <div class="fA" id="bottom"></div>
+                            <div class="fA" id="topSmall"></div>
+                            <div class="fE" id="bottom"></div>
+                            <div class="fE" id="topBig"></div>
+                            <div class="fB" id="bottom"></div>
+                            <div class="fB" id="topMiddle"></div>
+                            <div class="fGb" id="blackSmall"></div>
+                            <div class="fDb" id="blackBig"></div>
+                            <div class="fAb" id="blackBig"></div>
+                            <div class="fEb" id="blackBig"></div>
+                            <div class="fBb" id="blackSmall"></div>
+                            <div class="fF" id="bottom"></div>
+                            <div class="fF" id="topMiddle"></div>
+                        </div>
+                     </div>
+                </div>
+                
+                <!--FOOTER-->
+                <div class="block">
+                    <div id="footerLine"></div>
+                    <div id="footer">
+                        <p class="bodytext">
+                            Continue onto the next section to learn more about the harmonic and dissonant 
+                            relationships among the notes.
+                        </p>
+                    </div>
+                    <div id="nextArrow">
+                        <a id="nextArrowText" href="../intervals/part1/index.html">Intervals</a>
+                        <div id="nextArrowTip"></div>
+                        <div id="nextArrowLine"></div>
+                    </div>
+                    <div id="pastArrow">
+                        <a id="pastArrowText" href="../intro/index.html">Intro</a>
+                        <div id="pastArrowTip"></div>
+                        <div id="pastArrowLine"></div>
+                    </div>
+                </div>
+                <div id="popup" class="block">
+                    <a href="#" onclick="return false;">X</a>
+                    <div id="useChrome">
+                        <img id="chromeLogo" src="../../images/ChromeLogo.png" alt="Chrome Logo" height="150" width="150">
+                        <div>
+                            <a id="downloadChrome" href="https://www.google.com/intl/en/chrome/browser/">Download<br>Chrome</a>
+                        </div>
+                    </div>
+                    <p class="bodyheader">Use Chrome</p>
+                    <p class="bodytext">We strongly recommend you use Google Chrome Browser to play
+                    this app. Chrome lends higher quality sound than other browsers and also loads the app more easily. 
+                    Click below to download Chrome. Once you have downloaded Chrome, return to colorpiano.com and click 
+                    ‘Play’ once more.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--SCRIPTS-->
+        <script src="../../jquery.js"></script>
+        <script src="../../graphics/twelveStar/twelveStar.js"></script>
+        <script src="../../graphics/colorCircle/chromCircle.js"></script>
+        <script src="../../graphics/colorCircle/fifthsCircle.js"></script>
+        <script src="../../graphics/rearrangement/rearrangement.js"></script>
+        <script src="script.js"></script>
+        <script src="../../script.js"></script>
+    </body>
+</html>

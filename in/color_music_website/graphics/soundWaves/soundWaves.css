@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+}
+#canvasDivLeft {
+    position: absolute; left: 150px; top: 150px;
+}
+#canvasDivRight {
+    position: absolute; left: 750px; top: 150px;
+}

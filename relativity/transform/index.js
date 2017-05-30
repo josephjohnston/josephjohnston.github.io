@@ -11,9 +11,9 @@ function start() {
 }
 globs = {
   colors: [
-    'purple',
-    'gray',
-    'blue'
+    '#9b4eca',
+    '#939292',
+    '#FF9E00'
   ]
 }
 

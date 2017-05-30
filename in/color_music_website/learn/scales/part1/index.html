@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    <head>
+        <title>Scales</title>
+        
+        <meta name="description" content="Scales">
+        <meta name="author" content="Conor Parrish" ,"Joseph Johnston" ,"Akira Youngblood">
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="../../../reset.css">
+    	<link rel="stylesheet" href="../../../style.css">
+    	<link rel="stylesheet" href="../../style.css">
+    	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="../../../graphics/colorCircle/intervalCircle.css">
+    </head>
+    
+    <body class="currentLearn" id="currentScales">
+        <div id="wrapper">
+		    <!--MAIN NAV BAR-->
+		    <div id="navbar">
+		        <table>
+		            <tr>
+		                <td>
+		                    <a class="button" id="home" href="../../../index.html">Home</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="play" href="" target="_blank">Play</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="learn" href="../../intro/index.html">Learn</a>
+		                </td>
+	                    <td>
+		                    <a class="button" id="store" href="../../../store/index.html">Store</a>
+	                    </td>
+                    </tr>
+	            </table>
+            </div>
+            <!--LEARN SUB MENU-->
+            <table id="subnav">
+                <tr>
+                    <td>
+                        <a class="buttLearn" id="currentIntro" href="../../intro/index.html">Introduction</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                       <a class="buttLearn" id="currentColorArray" href="../../colorArray/index.html">Color Array</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentIntervals" href="../../intervals/part1/index.html">Intervals</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentScales" href="index.html">Scales</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentChords" href="../../chords/part1/index.html">Chords</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentMore" href="../../howToUse/index.html">Using the App</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <div id="subMenuLine"></div>
+            <!--PART 1 AND 2 MENU BAR-->
+            <table id="subIntNav">
+                <tr id="currentInt1">
+                    <td>
+                        <p class="subsub">Part:</p>
+                    </td>
+                    <td id="subIntNavE"></td>
+                    <td>
+                        <a class="buttInt" id="currentInt1" href="index.html">1</a>
+                    </td>
+                    <td id="subIntNavE"></td>
+                    <td>
+                        <a class="buttInt" id="currentInt2" href="../part2/index.html">2</a>
+                    </td>
+                </tr>
+            </table>
+            <!--PAGE HEADERS-->
+            <div id="header">
+                <p>Scales</p>
+            </div>
+            <div id="subheader">
+                <p>A Sequence of Notes.</p>
+            </div>
+            <!--CONTENT-->
+            <div id="container">
+                <!--'WHAT IS A SCALE' SECTION-->
+                <div class="block">
+                    <div id="defScale" class="wide">
+                        <p class="bodyheader">What is a Scale?</p>
+                        <p class="bodytext">
+                            A scale is a group of related notes organized to shape melodies and harmony in songs. 
+                            If you play or improvise on the piano disregarding any use for a scale, you are essentially
+                            randomizing your notes. Any standard song is built upon a scale of some sort. Each scale’s
+                            different collection of notes renders a different mood. Some scales sound happy, some sad,
+                            and some awkward or eerie. The standard scale we will discuss, which is called the ‘diatonic’
+                            scale, derives from a simple set of complementary notes. On this page, we will identify the
+                            structure of the diatonic scale. Let’s begin. 
+
+                            If you recall, notes located near each other on the circle of fifths complement each other 
+                            harmoniously. Therefore, in order to concoct a set of complementary notes to form the diatonic 
+                            scale, we will simply choose a series of neighboring notes from the circle of fifths. More 
+                            specifically, we will select the seven notes you see at the top of the circle below. These 
+                            seven notes will form the top row of the table graphic shown below the circle.
+                        </p>
+                    </div>
+                </div>
+                <canvas id="canvasArrow" width="500" height="550"></canvas>
+                <!--'THE DIATONIC SCALE' SECTION-->
+                <div class="block">
+                    <div id="intervalCircleWrapper">
+                        <div id="reference">
+                            <div class= "circles" id="C"><p>C</p></div>
+                            <div class= "circles" id="G"><p>G</p></div>
+                            <div class= "circles" id="D"><p>D</p></div>
+                            <div class= "circles" id="A"><p>A</p></div>
+                            <div class= "circles" id="E"><p>E</p></div>
+                            <div class= "circles" id="B"><p>B</p></div>
+                            <div class= "circles" id="Gb"><p>G<span>b</span></p></div>
+                            <div class= "circles" id="Db"><p>D<span>b</span></p></div>
+                            <div class= "circles" id="Ab"><p>A<span>b</span></p></div>
+                            <div class= "circles" id="Eb"><p>E<span>b</span></p></div>
+                            <div class= "circles" id="Bb"><p>B<span>b</span></p></div>
+                            <div class= "circles" id="F"><p>F</p></div>
+                            <div id="hollowCircle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="diagonal1"></div>
+                <div class="block">
+                    <table id="fifthsTable">
+                        <tr id="one"></tr>
+                            <td class="F">F</td>
+                            <td class="C">C</td>
+                            <td class="G">G</td>
+                            <td class="D">D</td>
+                            <td class="A">A</td>
+                            <td class="E">E</td>
+                            <td class="B">B</td>
+                        </tr>
+                        <tr id="two"></tr>
+                            <td class="C">C</td>
+                            <td class="G">G</td>
+                            <td class="D">D</td>
+                            <td class="A">A</td>
+                            <td class="E">E</td>
+                            <td class="B">B</td>
+                            <td class="F">F</td>
+                        </tr>
+                        <tr id="three"></tr>
+                            <td class="G">G</td>
+                            <td class="D">D</td>
+                            <td class="A">A</td>
+                            <td class="E">E</td>
+                            <td class="B">B</td>
+                            <td class="F">F</td>
+                            <td class="C">C</td>
+                        </tr>
+                        <tr id="four"></tr>
+                            <td class="D">D</td>
+                            <td class="A">A</td>
+                            <td class="E">E</td>
+                            <td class="B">B</td>
+                            <td class="F">F</td>
+                            <td class="C">C</td>
+                            <td class="G">G</td>
+                        </tr>
+                        <tr id="five"></tr>
+                            <td class="A">A</td>
+                            <td class="E">E</td>
+                            <td class="B">B</td>
+                            <td class="F">F</td>
+                            <td class="C">C</td>
+                            <td class="G">G</td>
+                            <td class="D">D</td>
+                        </tr>
+                        <tr id="six"></tr>
+                            <td class="E">E</td>
+                            <td class="B">B</td>
+                            <td class="F">F</td>
+                            <td class="C">C</td>
+                            <td class="G">G</td>
+                            <td class="D">D</td>
+                            <td class="A">A</td>
+                        </tr>
+                        <tr id="seven">
+                            <td class="B">B</td>
+                            <td class="F">F</td>
+                            <td class="C">C</td>
+                            <td class="G">G</td>
+                            <td class="D">D</td>
+                            <td class="A">A</td>
+                            <td class="E">E</td>
+                        </tr>
+                    </table>
+                    <div class="descriptions" id="descript1">
+                        <p class="bodyheader">The Diatonic Scale&nbsp;&nbsp;|<a href="#" onclick="return false;" style="text-decoration:none" id="show1">&nbsp;&nbsp;Show</a></p>
+                        <p class="bodytext">
+                            If you try playing the seven notes of this top row sequentially, your hands 
+                            will jump sporadically up and down the keyboard. Scales do not hop around like 
+                            this, but instead use a linear format that moves in a single direction on the 
+                            keyboard. In order to morph these notes into the diatonic scale, we must formulate 
+                            the notes in a linear arrangement. See the sketched table at the left to see this 
+                            scale configuration in its desired format. If you look closely, you’ll see that we 
+                            constructed the top row of notes from left to right following the order of notes in 
+                            the circle of fifths. In the second row we slid each note one position to the left. 
+                            This repositioning process continues until every note appears in every possible 
+                            position within a row. When we take the diagonal line of notes from top left to 
+                            bottom right, you might notice something interesting. Click ‘show’ to see it. 
+                            What’s so special about the notes in this diagonal line? They make up the order of 
+                            notes in the diatonic scale! Unlike the circle of fifths, the diatonic scale skips 
+                            every other note in the top row. In other words, we can reach the order of notes in 
+                            the diatonic scale by taking every other note from any seven sequential notes in 
+                            the circle of fifths.
+                        </p>
+                    </div>
+                </div>
+                <!--'MAJOR AND MINOR THIRDS' SECTION-->
+                <div id="horizontalTop"></div>
+                <div id="horizontalBottom"></div>
+                <div id="room" class="block">
+                    <div class="descriptions" id="descript2">
+                        <p class="bodyheaderSpecial2">Major and Minor Scales&nbsp;&nbsp;|<a href="#" onclick="return false;" style="text-decoration:none" id="show2">&nbsp;&nbsp;Show</a></p>
+                        <p class="bodytext">
+                            Now that we know how to reach the diatonic scale, let’s look at another table. 
+                            This time we will use the order of notes in the diatonic scale as the top row, 
+                            as shown to the right. Instead of looking at the diagonal order this time, we will 
+                            focus on the horizontal rows. Again, the general order of notes in each row is 
+                            referred to as the diatonic scale. You can construct a diatonic scale with any group 
+                            of seven adjacent notes on the circle of fifths. Because each row starts with a 
+                            different note, each of these seven rows show a different version of the diatonic 
+                            scale. These different versions are called ‘modes.’ Two of these modes stand out among 
+                            the rest for their fulfilling sound. Click ‘show’ to see these two modes highlighted. 
+                            The mode beginning with A is called the minor scale and the one below, which begins 
+                            with C, is called the major scale. The minor and major scales can be found in almost 
+                            every melody you’ve ever heard. Play them and you’ll notice that the major scale sounds 
+                            happy and confident, while the minor scale seems downcast and despondent. Anything you 
+                            play will be named after the note you start with and the mode you choose. For example, 
+                            you might play a song using the ‘C major’ scale. You can also say that you are playing 
+                            in the ‘key of C major.’
+                        </p>
+                    </div>
+                    <table id="fifthsTable">
+                        <tr id="one"></tr>
+                            <td class="F">F</td>
+                            <td class="G">G</td>
+                            <td class="A">A</td>
+                            <td class="B">B</td>
+                            <td class="C">C</td>
+                            <td class="D">D</td>
+                            <td class="E">E</td>
+                        </tr>
+                        <tr id="two"></tr>
+                            <td class="G">G</td>
+                            <td class="A">A</td>
+                            <td class="B">B</td>
+                            <td class="C">C</td>
+                            <td class="D">D</td>
+                            <td class="E">E</td>
+                            <td class="F">F</td>
+                        </tr>
+                        <tr id="three"></tr>
+                            <td class="A">A</td>
+                            <td class="B">B</td>
+                            <td class="C">C</td>
+                            <td class="D">D</td>
+                            <td class="E">E</td>
+                            <td class="F">F</td>
+                            <td class="G">G</td>
+                        </tr>
+                        <tr id="four"></tr>
+                            <td class="B">B</td>
+                            <td class="C">C</td>
+                            <td class="D">D</td>
+                            <td class="E">E</td>
+                            <td class="F">F</td>
+                            <td class="G">G</td>
+                            <td class="A">A</td>
+                        </tr>
+                        <tr id="five"></tr>
+                            <td class="C">C</td>
+                            <td class="D">D</td>
+                            <td class="E">E</td>
+                            <td class="F">F</td>
+                            <td class="G">G</td>
+                            <td class="A">A</td>
+                            <td class="B">B</td>
+                        </tr>
+                        <tr id="six"></tr>
+                            <td class="D">D</td>
+                            <td class="E">E</td>
+                            <td class="F">F</td>
+                            <td class="G">G</td>
+                            <td class="A">A</td>
+                            <td class="B">B</td>
+                            <td class="C">C</td>
+                        </tr>
+                        <tr id="seven">
+                            <td class="E">E</td>
+                            <td class="F">F</td>
+                            <td class="G">G</td>
+                            <td class="A">A</td>
+                            <td class="B">B</td>
+                            <td class="C">C</td>
+                            <td class="D">D</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--'REVIEW' SECTION-->
+                <div class="block">
+                    <div id="defScale" class="wide">
+                        <p class="bodyheader">Procedure</p>
+                        <p class="bodytext" id="procedure">
+                            We hope you now understand the origin of the major and minor scale. To review, here’s the procedure:
+                            <br>
+                            <span class="listHead">&nbsp;1.</span>&nbsp;Choose seven neighboring notes from the circle of fifths.
+                            <br>
+                            <span class="listHead">&nbsp;2.</span>&nbsp;Select every other note from that series.
+                            <br>
+                            <span class="listHead">&nbsp;3.</span>&nbsp;Now with a new array of notes, re-order the array by taking the note of the 
+                            left and attaching it to the end of the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right side until one of the following two scenarios are met. 
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="headSub">&nbsp;A.</span>&nbsp;The third note in the array appears on the left side, turning the arrangement into the minor scale.
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="headSub">&nbsp;B.</span>&nbsp;The fifth note in the array appears on the left side, turning the arrangement into the major scale.<span class="headSub">&nbsp;</span>
+                        </p>
+                    </div>
+                </div>
+                <div id="thisBusiness"class="block">
+                    <div id="defScale" class="wide">
+                        <p class="bodytext">
+                            We have provided these tables, rows, diagonal lines, and constant rearrangement to explain the 
+                            origin of the two scales, major and minor, that you will use every time you play. Of course 
+                            there are more efficient methods of identifying these scales. For example, you can start on 
+                            any note and then follow the interval sequence for the major or minor scale as illustrated below<br>
+                            ('M' denotes a major interval, and 'm' denotes a minor interval.)
+                        </p>
+                    </div>
+                </div>
+                <div id="scaleSteps" class="block">
+                    <table>
+                        <tr id="majorR">
+                            <th id="minorH">Major:</th>
+                            <td>M2</td>
+                            <td>M2</td>
+                            <td>m2</td>
+                            <td>M2</td>
+                            <td>M2</td>
+                            <td>M2</td>
+                            <td>m2</td>
+                        </tr>
+                        <tr></tr>
+                        <tr id="minorR">
+                            <th id="minorH">Minor:</th>
+                            <td>M2</td>
+                            <td>m2</td>
+                            <td>M2</td>
+                            <td>M2</td>
+                            <td>m2</td>
+                            <td>M2</td>
+                            <td>M2</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--FOOTER SECTION-->
+                <div class="block">
+                    <div id="footerLine"></div>
+                        <p class="bodytext" id="footer">
+                            Head over to Part 2, which will introduce you to the structure of the major and minor 
+                            scale. If you wish to see them as they appear on the piano, head to the 
+                            <a id="appLink" href="http://mudcu.be/piano/">app</a> and click on the speaker cone. 
+                            There, you will find the major and minor scale and more displayed on the piano in a playable 
+                            form.
+                        </p>
+                    <div id="nextArrow">
+                        <a id="nextArrowText" href="../../scales/part2/index.html">Part 2</a>
+                        <div id="nextArrowTip"></div>
+                        <div id="nextArrowLine"></div>
+                    </div>
+                    <div id="pastArrow">
+                        <a id="pastArrowText" href="../../intervals/part1/index.html">Intervals</a>
+                        <div id="pastArrowTip"></div>
+                        <div id="pastArrowLine"></div>
+                    </div>
+                </div>
+                <!--USE CHROME-->
+                <div id="popup" class="block">
+                    <a href="#" onclick="return false;">X</a>
+                    <div id="useChrome">
+                        <img id="chromeLogo" src="../../../images/ChromeLogo.png" alt="Chrome Logo" height="150" width="150">
+                        <div>
+                            <a id="downloadChrome" href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Download<br>Chrome</a>
+                        </div>
+                    </div>
+                    <p class="bodyheader">Use Chrome</p>
+                    <p class="bodytext" id="bodytextChrome">We strongly recommend you use Google Chrome Browser to play
+                    this app. Chrome lends higher quality sound than other browsers and also loads the app more easily. 
+                    Click below to download Chrome. Once you have downloaded Chrome, return to colorpiano.com and click 
+                    ‘Play’ once more.
+                    </p>
+                </div>
+            </div>
+        </div> 
+        <!--SCRIPTS-->
+        <script src="../../../jquery.js"></script>
+        <script src="../../../script.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

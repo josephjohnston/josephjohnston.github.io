@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    <head>
+        <title>Scales</title>
+        
+        <meta name="description" content="Scales">
+        <meta name="author" content="Conor Parrish" ,"Joseph Johnston" ,"Akira Youngblood">
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="../../../reset.css">
+    	<link rel="stylesheet" href="../../../style.css">
+    	<link rel="stylesheet" href="../../style.css">
+    	<link rel="stylesheet" href="style.css">
+    	
+    </head>
+    
+    <body class="currentLearn" id="currentScales">
+        <div id="wrapper">
+		    
+		    <div id="navbar">
+		        <table>
+		            <tr>
+		                <td>
+		                    <a class="button" id="home" href="../../../index.html">Home</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="play" href="http://mudcu.be/piano/" target="_blank">Play</a>
+		                </td>
+		                <td>
+		                    <a class="button" id="learn" href="../../intro/index.html">Learn</a>
+		                </td>
+	                    <td>
+		                    <a class="button" id="store" href="../../../store/index.html">Store</a>
+	                    </td>
+                    </tr>
+	            </table>
+            </div>
+            
+            <table id="subnav">
+                <tr>
+                    <td>
+                        <a class="buttLearn" id="currentIntro" href="../../intro/index.html">Introduction</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                       <a class="buttLearn" id="currentColorArray" href="../../colorArray/index.html">Color Array</a>   
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentIntervals" href="../../intervals/part1/index.html">Intervals</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentScales" href="../../scales/part1/index.html">Scales</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentChords" href="../../chords/part1/index.html">Chords</a>
+                    </td>
+                    <td class="subnavbarEmpty"></td>
+                    <td>
+                        <a class="buttLearn" id="currentMore" href="../../howToUse/index.html">Using the App</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <div id="subMenuLine"></div>
+            
+            <table id="subIntNav">
+                <tr id="currentInt2">
+                    <td>
+                        <p class="subsub2">Part:</p>
+                    </td>
+                    <td id="subIntNavE"></td>
+                    <td>
+                        <a class="buttInt2" id="currentInt1" href="../part1/index.html">1</a>
+                    </td>
+                    <td id="subIntNavE"></td>
+                    <td>
+                        <a class="buttInt2" id="currentInt2" href="index.html">2</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <div id="header">
+                <p>C Major</p>
+            </div>
+            
+            <a href="#" onclick="return false;" id="subheader">Click Me</a> 
+        
+            <div id="container"></div>
+                <a href="#" onclick="return false;" style="text-decoration:none" class="mode" id="major">Major</a>
+                <a href="#" onclick="return false;" class="mode" style="text-decoration:none" id="minor">Minor</a>
+                <div class="block">
+                    <!--CIRCLE OF FIFTHS-->
+                    <div id="fifthsWrapper">
+                        <div id="fiReference">
+                            <div class= "ficircles" id="fiC"><p>C</p></div>
+                            <div class= "ficircles" id="fiG"><p>G</p></div>
+                            <div class= "ficircles" id="fiD"><p>D</p></div>
+                            <div class= "ficircles" id="fiA"><p>A</p></div>
+                            <div class= "ficircles" id="fiE"><p>E</p></div>
+                            <div class= "ficircles" id="fiB"><p>B</p></div>
+                            <div class= "ficircles" id="fiGb"><p>G<span>b</span></p></div>
+                            <div class= "ficircles" id="fiDb"><p>D<span>b</span></p></div>
+                            <div class= "ficircles" id="fiAb"><p>A<span>b</span></p></div>
+                            <div class= "ficircles" id="fiEb"><p>E<span>b</span></p></div>
+                            <div class= "ficircles" id="fiBb"><p>B<span>b</span></p></div>
+                            <div class= "ficircles" id="fiF"><p>F</p></div>
+                            <div id="fiHollowCircle"></div>
+                        </div>
+                    </div>
+                    <!--CHROMATIC CIRCLE-->
+                    <div id="chromWrapper">
+                        <div id="chReference">
+                            <div class= "chcircles" id="chC"><p>C</p></div>
+                            <div class= "chcircles" id="chG"><p>G</p></div>
+                            <div class= "chcircles" id="chD"><p>D</p></div>
+                            <div class= "chcircles" id="chA"><p>A</p></div>
+                            <div class= "chcircles" id="chE"><p>E</p></div>
+                            <div class= "chcircles" id="chB"><p>B</p></div>
+                            <div class= "chcircles" id="chGb"><p>G<span>b</span></p></div>
+                            <div class= "chcircles" id="chDb"><p>D<span>b</span></p></div>
+                            <div class= "chcircles" id="chAb"><p>A<span>b</span></p></div>
+                            <div class= "chcircles" id="chEb"><p>E<span>b</span></p></div>
+                            <div class= "chcircles" id="chBb"><p>B<span>b</span></p></div>
+                            <div class= "chcircles" id="chF"><p>F</p></div>
+                            <div id="chHollowCircle"></div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="block">
+                    <div id="HOL">
+                        <canvas id="canvasHOL" width="488" height="488">Canvas not supported</canvas>
+                    </div>
+                    
+                    <div id="HOR">
+                        <canvas id="canvasHOR" width="488" height="488">Canvas not supported</canvas>
+                    </div>
+                </div>
+                <div class="block">
+                    <div id="INL">
+                        <div id="These">These</div>
+                        <div id="Colors">Colors</div>
+                        <div id="arrowTip"></div>
+                        <div id="arrowLine"></div>
+                        <div id="That">That</div>
+                        <div id="Order">Order</div>
+                    </div>
+                    <div id="INR">
+                        <div id="1">1</div>
+                        <div id="2">2</div>
+                        <div id="3">3</div>
+                        <div id="4">4</div>
+                        <div id="5">5</div>
+                        <div id="6">6</div>
+                        <div id="7">7</div>
+                        <div id="pointer"></div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div id="scaleMenu">
+        		        <table>
+        		            <tr>
+        		                <td class="keyC">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="C">C</a>
+        		                </td>
+        		                <td class="keyDb">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="Db">D<span class="Db">b</span></a>
+        		                </td>
+        		                <td class="keyD">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="D">D</a>
+        		                </td>
+        	                    <td class="keyEb">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="Eb">E<span class="Eb">b</span></a>
+        	                    </td>
+        	                    <td class="keyE">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="E">E</a>
+        		                </td>
+        		                <td class="keyF">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="F">F</a>
+        		                </td>
+        		                <td class="keyGb">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="Gb">G<span class="Gb">b</span></a>
+        		                </td>
+        	                    <td class="keyG">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="G">G</a>
+        	                    </td>
+        	                    <td class="keyAb">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="Ab">A<span class="Ab">b</span></a>
+        		                </td>
+        		                <td class="keyA">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="A">A</a>
+        		                </td>
+        		                <td class="keyBb">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="Bb">B<span class="Bb">b</span></a>
+        		                </td>
+        	                    <td  class="keyB">
+        		                    <a href="#" onclick="return false;" style="text-decoration:none" class="B">B</a>
+        	                    </td>
+                            </tr>
+        	            </table>
+                    </div>
+                </div>
+                <div id="popup" class="block">
+                    <a href="#" onclick="return false;">X</a>
+                    <p class="bodyheader">How to Use</p>
+                    <p class="bodytext">
+                    Click on 'major' or 'minor' to alter the type of scale you are viewing, and click on the 
+                    row of notes below the two big circles to select the scale’s key. Observe how the colors 
+                    in the circle to the left are rearranged in the circle to the right to form the diatonic 
+                    scale. The order of notes in the diatonic scale (the circle on the right) is the order in 
+                    which those note appear on the piano.
+                    </p>
+                </div>
+            </div>
+            
+        </div> 
+            
+    <script src="../../../jquery.js"></script>
+    <script src="../../../graphics/colorCircle/fifthsCircle.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>

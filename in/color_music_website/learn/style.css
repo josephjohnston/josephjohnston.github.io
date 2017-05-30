@@ -1,0 +1,69 @@
+/*LEARN SUBMENU*/
+.buttLearn {
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-UltraLight",sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.buttLearn:hover {
+    color: rgb(26,142,255);
+}
+#currentIntro #currentIntro,
+#currentColorArray #currentColorArray,
+#currentIntervals #currentIntervals,
+#currentScales #currentScales,
+#currentChords #currentChords,
+#currentMore #currentMore {
+    color: rgb(128,128,128);
+    font-family: "HelveticaNeue-LightItalic","HelveticaNeue-UltraLightItalic",sans-serif;
+}
+#subnav {
+    position: relative; left: 170px; top: 35px;
+}
+/*SUB SUBMENU*/
+#subIntNav {
+    position: relative; left: 450px; top: 60px;
+}
+.buttInt {
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-UltraLight",sans-serif;
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(128,128,128);
+}
+.buttInt:hover {
+    color: rgb(26,142, 255);
+}
+.subsub {
+    font-family: "HelveticaNeue-Light","HelveticaNeue-Thin",sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+.buttInt2 {
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-UltraLight" ,sans-serif;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+}
+.buttInt2:hover {
+    color: rgb(26,142, 255);
+}
+.subsub2 {
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-UltraLight" ,sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(128,128,128);
+}
+#subIntNavE {
+    width: 20px;
+}
+#currentInt1 #currentInt1 {
+    color: rgb(0,0,0);
+    font-family: "HelveticaNeue-UltraLightItalic";
+}
+#currentInt2 #currentInt2 {
+    color: rgb(128,128,128);
+    font-family: "HelveticaNeue-UltraLightItalic";
+}
+
+

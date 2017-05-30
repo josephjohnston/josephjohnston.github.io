@@ -1,0 +1,71 @@
+#popup {
+    bottom: 950px;
+}
+#subheader {
+    margin-bottom: 0;
+}
+/*DESCRIPTIONS*/
+#number1, #number2, #number3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+#number1 {
+    background: rgb(255,198,0);
+}
+#number2 {
+    background: rgb(2,219,0);
+}
+#number3 {
+    background: rgb(74,31,255);
+}
+table p {
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    font-size: 36px;
+    color: white;
+    margin: 10px 0 0 50px;
+    vertical-align: middle;
+}
+/*STICKER IDEAS*/
+#stickerIdeaForm {
+    width: 1024px;
+    height: 250px;
+    background: rgb(255,0,100);
+    border-radius: 10px;
+}
+#stickerIdeaForm textarea {
+    width: 824px;
+    height: 100px;
+    position: relative; left: 100px; top: 70px;
+}
+#submit {
+    width: 838px;
+    position: relative; left: 100px; top: 60px;
+}
+form p {
+    margin-bottom: -70px;
+    position: relative; top: 10px;
+}
+/*STORE SUBMENU*/
+.buttStore {
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-Light",sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.buttStore:hover {
+    color: rgb(219,0,215);
+}
+#currentDecals #currentDecals,
+#currentChordBoard #currentChordBoard,
+#currentApparel #currentApparel, 
+#currentCart #currentCart {
+    color: rgb(128,128, 128);
+}
+
+

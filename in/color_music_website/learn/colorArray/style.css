@@ -1,0 +1,145 @@
+body {
+    background: black;
+}
+#popup {
+    bottom: 4430px;
+}
+.bodyheader {
+    line-height: 40px;
+}
+/*NOT JUST FOR MATCHING*/
+#chromKeyboard {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 67px 0 120px;
+}
+/*ALSO FOR HARMONIZING*/
+#fifthsKeyboard {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 120px 0 67px;
+}
+/*CHROMATIC CIRCLE*/
+#chromWrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 0 0 42px;
+}
+#chTwelveStar {
+    position: relative; top: 120px;
+}
+/*CIRCLE OF FIFTHS*/
+#fifthsWrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 42px 0 0;
+}
+/*APPLYING NUMBERS*/
+#applyingNumbers {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+#applyingNumbersNumbers td {
+    font-size: 64px;
+    color: gray;
+}
+#applyingNotes1 td {
+    width: 86px;
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 72px;
+    color: white;
+}
+#applyingNotes1 {
+    float: left;
+}
+#applyingNotes2 td {
+    width: 84px;
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 72px;
+    color: white;
+}
+#applyingNotes2 {
+    float: right;
+    position: relative; left: 5px;
+}
+#tableOne {
+    float: left;
+}
+#tableOne td {
+    width: 86px;
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+}
+#tableTwo {
+    float: right;
+    position: relative; left: 4px; top: -64px;
+}
+#tableTwo td {
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    width: 85px;
+}
+/*APPLYING MONTHS*/
+#applyingMonths {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+#monthsEverything {
+    margin: -40px 0 -40px 0;
+}
+#months div {
+    float: left;
+    position: relative; left: 24px;
+    width: 85px;
+    height: 10px;
+    text-align: left;
+    font-family:  "HelveticaNeue-UltraLight","HelveticaNeue-Light",sans-serif;
+    font-size: 48px;
+    color: gray;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 50px 0 0 0;
+}
+/*APPLYING COLORS*/
+#applyingColorsText {
+    margin: 200px 0 0 0;
+}
+#applyingColorsGraphic {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 40px 0 0 0;
+}
+/*FOOTER*/
+#nextArrow {
+    float: right;
+    position: absolute; bottom: 45px; right: 10px;
+}
+#nextArrowtext {
+    font-size: 20px;
+}
+#pastArrow {
+    float: left;
+    position: absolute; bottom: 45px; left: 10px;
+}
+#footer {
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-Light",sans-serif;
+    color: rgb(52,52,52);
+    font-size: 20px;
+    width: 420px;
+    text-align:center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 120%;
+    position: relative;
+    margin: 50px 0 50px 0;
+}
+
+

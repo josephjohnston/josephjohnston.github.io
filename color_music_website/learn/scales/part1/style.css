@@ -1,0 +1,241 @@
+body {
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 20%, #d8d5e7 80%), -moz-linear-gradient(top,  #ffffff 20%, rgb(240,240,240) 80%); 
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(20%,#ffffff), color-stop(80%,#d8d5e7)), -webkit-gradient(linear, left top, left bottom, color-stop(20%,#ffffff), color-stop(80%,rgb(240,240,240)));
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%), -webkit-linear-gradient(top,  #ffffff 20%,rgb(240,240,240) 80%);
+    background: -o-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%), -o-linear-gradient(top,  #ffffff 20%,rgb(240,240,240) 80%);
+    background: -ms-radial-gradient(center, ellipse cover,  #ffffff 20%,#d8d5e7 80%), -ms-linear-gradient(top,  #ffffff 20%,rgb(240,240,240) 80%);
+    background: radial-gradient(ellipse at center,  #ffffff 20%,rgb(190,190,220) 80%), linear-gradient(to bottom,  #ffffff 20%,rgb(230,230,230) 80%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 0, center 1270px;
+    background-size: 1550px 1230px, 1550px 1480px;
+}
+#popup {
+    bottom: 3720px;
+    display: none;
+}
+/*LEARN SUBMENU*/
+.buttLearn {
+    color: rgb(100,100,100);
+}
+.buttLearn:hover {
+    color: rgb(20,119, 214);
+}
+.buttLearn:active {
+    color: rgb(20,119, 214);
+}
+#currentIntro #currentIntro,
+#currentColorArray #currentColorArray,
+#currentIntervals #currentIntervals,
+#currentScales #currentScales,
+#currentChords #currentChords,
+#currentMore #currentMore {
+    color: black;
+}
+#header {
+    color: black;
+    margin: 10px 0 0 0; 
+}
+#subheader {
+    color: rgb(150,150,150);
+}
+/*TEXT REVISIONS*/
+.bodyheader {
+    color: black;
+    margin: 0 0 22px 0;
+}
+.bodytext {
+    color: rgb(52,52,52);
+}
+/*DESCRIPTIONS*/
+.descriptions {
+    width: 583px;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    line-height: 150%;
+}
+/*GENERAL COLORS*/
+.F {
+    color: rgb(170,255,0);
+}
+.C {
+    color: rgb(255,255,11);
+}
+.G {
+    color: rgb(255,198,0);
+}
+.D {
+    color: rgb(255,153,0);
+}
+.A {
+    color: rgb(255,100,0);
+}
+.E {
+    color: rgb(255,0,100);
+}
+.B {
+    color: rgb(219,0,215);
+}
+/*TABLE GRAPHICS*/
+#fifthsTable {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 96px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    display: inline-block;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+.black {
+    background: rgb(100,100,100);
+}
+/*SHOW BUTTONS*/
+#show1, #show2 {
+    color: rgb(20,119, 214);
+}
+#show1:hover, #show2:hover {
+    color: rgb(150,150,150);
+}
+/*'WHAT IS A SCALE' SECTION*/
+#defScale {
+    margin: 0 0 80px 0;
+    width: 972px;
+}
+#intervalCircleWrapper {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; left: 80px;
+    margin: 60px 0 -100px 0;
+}
+#canvasArrow {
+    position: absolute; right: 600px;
+}
+/*'THE DIATONIC SCALE' SECTION*/
+.bodyheaderSpecial2 {
+    color: black;
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    font-size: 40px;
+    margin: 0 0 22px 0;
+}
+#descript1 {
+    position: relative; top: -30px;
+    margin: 0 0 0 25px;
+}
+#diagonal1 {
+    width: 80px;
+    height: 700px;
+    background: rgb(80,80,80);
+    border: 1px solid black;
+    position: absolute; left: 165px; top: 931px;
+    float: left;
+    z-index: -1;
+    border-radius: 50px;
+    -moz-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    -o-transform: rotate(-34deg);
+    -ms-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+}
+/*MAJOR AND MINOR THIRDS' SECTION*/
+#descript2 {
+    top: -30px;
+    margin: 0 25px 0 0;
+}
+#horizontalTop {
+    width: 450px;
+    height: 80px;
+    background: rgb(80,80,80);
+    border: 1px solid black;
+    position: absolute; right: -20px; top: 1848px;
+    float: right;
+    z-index: -1;
+    border-radius: 50px;
+}
+#horizontalBottom {
+    width: 450px;
+    height: 80px;
+    background: rgb(80,80,80);
+    border: 1px solid black;
+    position: absolute; right: -20px; top: 2007px;
+    float: right;
+    z-index: -1;
+    border-radius: 50px;
+}
+#room {
+    margin: 120px 0 200px 0;
+}
+/*'REVIEW' SECTION*/
+#review {
+    text-align: center;
+    position: relative; left: 200px;
+    width: 624px;
+}
+#indent {
+    text-indent: 50px;
+    text-align: left;
+}
+.listHead {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    color: rgb(20,119, 214);
+}
+.headSub {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    color: rgb(20,119, 214);
+}
+#thisBusiness {
+    margin: -50px 0 -150px 0;
+}
+/*SCALE STEPS GRAPHIC*/
+#scaleSteps {
+    display: inline-block;
+    position: relative; left: 25px;
+    margin: -500px 0 -200px 0;
+}
+#scaleSteps td {
+    display: inline-block;
+    width: 125px;
+}
+#majorR {
+    font-family: "HelveticaNeue-Light","HelveticaNeue-Thin",sans-serif;
+    font-size: 48px;
+    color: rgb(20,119, 214);
+}
+#majorH {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    color: rgb(80,80,80);
+}
+#minorR {
+    font-family: "HelveticaNeue-Light","HelveticaNeue-Thin",sans-serif;
+    color: rgb(20,119, 214);
+    font-size: 48px;
+}
+#minorH {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    color: rgb(80,80,80);
+}
+/*PROCEDURE*/
+#procedure {
+    text-align: left;
+}
+/*FOOTER*/
+#nextArrow {
+    float: right;
+    position: absolute; bottom: 75px; right: 10px;
+}
+#pastArrow {
+    float: left;
+    position: absolute; bottom: 75px; left: 10px;
+}
+#footer {
+    color: rgb(52,52,52);
+    font-size: 20px;
+    width: 600px;
+    text-align:center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 120%;
+    position: relative;
+    margin: 50px 0 50px 0;
+}
+
+

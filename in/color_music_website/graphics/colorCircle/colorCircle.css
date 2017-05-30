@@ -1,0 +1,44 @@
+#chromWrapper {
+    width: 480px;
+    height: 480px;
+}
+#canvasDiv {
+    position: relative; top: 109px;
+}
+#reference {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.circles {
+    width:96px;
+    height:96px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	z-index: 1;
+}
+.circles p {
+    font-family:'HelveticaNeue-CondensedBlack',sans-serif;
+    color:#fff;
+    text-align:center;
+    padding-top:11px;
+    font-size:72px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+#hollowCircle {
+    width:276px;
+    height:276px;
+    -webkit-border-radius: 276px;
+    -moz-border-radius: 276px;
+    border-radius: 250px;
+    border: solid 104px;
+    border-color: white;
+    position: relative; right: 52px; bottom: 52px;
+}
+span {
+    font-size: 36px;
+}

@@ -1,0 +1,253 @@
+#popup {
+    display: block;
+    width: 500px;
+    height: 290px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid gray;
+    position: relative; left: 262px; bottom: 1700px;
+    z-index: 100;
+    box-shadow: 0 0 20px black;
+    display: none;
+}
+#popup>a {
+    text-decoration:none;
+    float:right;
+    margin: -10px 8px 0 0;
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 48px;
+    color: gray;
+}
+#popup .bodyheader {
+    margin: 20px 0 0 50px;
+    text-align: left;
+    color: black;
+}
+#popup .bodytext {
+    margin: 10px 30px 0 50px;
+    text-align: left;
+    line-height: 24px;
+    font-family: "HelveticaNeue-Light","HelveticaNeue-Thin",sans-serif;
+}
+#subheader {
+    left: 440px;
+    text-decoration: none;
+}
+/*FORMATTING*/
+#subnav {
+    position: relative; top: 25px;
+}
+#wrapper {
+    height: 10px;
+}
+.buttInt2 {
+    position: relative; top: -0px;
+}
+/*CHROMATIC CIRCLE*/
+#fifthsWrapper {
+    width: 480px;
+    height: 480px;
+    display: inline-block;
+    position: relative; right: 27px; bottom: 80px;
+    margin: 50px 0 0 0;
+}
+#fiReference {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.ficircles {
+    width:96px;
+    height:96px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+	position: absolute;
+	z-index: 1;
+}
+.ficircles p {
+    font-family:'HelveticaNeue-CondensedBlack',sans-serif;
+    color:#fff;
+    text-align:center;
+    padding-top:11px;
+    font-size:72px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+#fiHollowCircle {
+    width:276px;
+    height:276px;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+    border: solid 104px;
+    border-color: white;
+    position: relative; right: 52px; bottom: 52px;
+}
+span {
+    font-size: 36px;
+}
+/*CIRCLE OF FIFTHS*/
+#chromWrapper {
+    width: 480px;
+    height: 480px;
+    display: inline-block;
+    position: relative; left: 27px;  bottom: 80px;
+    margin: 50px 0 0 0;
+}
+#chReference {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.chcircles {
+    width:96px;
+    height:96px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+	position: absolute;
+	z-index: 1;
+}
+.chcircles p {
+    font-family:'HelveticaNeue-CondensedBlack',sans-serif;
+    color:#fff;
+    text-align:center;
+    padding-top:11px;
+    font-size:72px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+#chHollowCircle {
+    width:276px;
+    height:276px;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+    border: solid 104px;
+    border-color: white;
+    position: relative; right: 52px; bottom: 52px;
+}
+span {
+    font-size: 36px;
+}
+#HOL {
+    width: 488px;
+    height: 488px;
+    display: inline-block;
+    position: relative; right: 23px; bottom: 647px;
+    z-index: 1;
+    color: red;
+}
+#HOR {
+    width: 488px;
+    height: 488px;
+    display: inline-block;
+    position: relative; left: 23px; bottom: 647px;
+    z-index: 1;
+}
+#INL {
+    width: 280px;
+    height: 280px;
+    display: inline-block;
+    position: relative; right: 127px; top: -1130px;
+    z-index: 1;
+    font-family: 'HelveticaNeue-CondensedBlack',sans-serif;
+    font-size: 48px;
+    color: white;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+#INR {
+    width: 280px;
+    height: 280px;
+    border-radius: 140px;
+    display: inline-block;
+    position: relative; left: 127px; top: -1112px;
+    z-index: 1;
+    font-family: 'HelveticaNeue-CondensedBlack',sans-serif;
+    font-size: 64px;
+    color: white;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+#scaleMenu {
+    width: 1024px;
+    height: 57px;
+    display: inline-block;
+    position: relative; bottom: 1100px;
+}
+#scaleMenu td {
+    display: inline-block;
+    position: relative; left: 2px;
+    background: blue;
+    height: 80px;
+    width: 83px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 1px;
+    text-decoration: none;
+    line-height: 55px;
+}
+a {
+    text-align: center;
+    font-family: 'HelveticaNeue-CondensedBlack',sans-serif;
+    font-size: 64px;
+    color: rgb(50,50,50);
+    position: relative; top: 12px;
+}
+.key span {
+    font-family: 'HelveticaNeue-CondensedBlack',sans-serif;
+    font-size: 36px;
+    color: rgb(50,50,50);
+}
+#scaleMenu td {
+    cursor: pointer;
+}
+#arrowTip {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgb(60,60,60);
+    position: relative; left: 150px; top: 10px;
+    border-radius: 2px;
+    margin: -8px 0 -10px 0;
+}
+#arrowLine {
+    width: 60px;
+    height: 20px;
+    background-color: rgb(60,60,60);
+    position: relative; bottom: 20px; left: 110px;
+    border-radius: 1px;
+}
+#major {
+    width: 200px;
+    height: 80px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'HelveticaNeue-CondensedBlack',sans-serif;
+    font-size: 64px;
+    color: rgb(60,60,60);
+    float: left;
+    position: relative; top: -50px;
+}
+#minor {
+    width: 200px;
+    height: 80px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'HelveticaNeue-CondensedBlack',sans-serif;
+    font-size: 64px;
+    color: rgb(60,60,60);
+    float: right;
+    position: relative; top: -50px;
+}
+#instructions {
+    width: 1024px;
+    font-family: 'HelveticaNeue-CondensedBlack',sans-serif;
+    font-size: 64px;
+    color: white;
+    position: absolute; top: 900px;
+}
+
+
+

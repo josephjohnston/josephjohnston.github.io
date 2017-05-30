@@ -1,0 +1,342 @@
+#subheader {
+    margin-bottom: 0;
+}
+/*POPUP MENU*/
+#clickMe {
+    text-decoration: none;
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    font-size: 40px;
+    color: rgb(150,150,150);
+    position: relative; top: 100px; left: 440px;
+    text-align: center;
+}
+#popup {
+    display: block;
+    width: 1024px;
+    height: 520px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid gray;
+    position: relative; left: 0; bottom: 2350px;
+    z-index: 2;
+    box-shadow: 0 0 20px black;
+    margin-left: 8px;
+    display: none;
+}
+#popup>a {
+    text-decoration:none;
+    float:right;
+    margin-right: 8px;
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 48px;
+    color: gray;
+}
+#popup .bodyheader {
+    margin: 20px 0 0 50px;
+    text-align: left;
+    color: black;
+}
+#popup .bodytext {
+    margin: 10px 30px 0 50px;
+    text-align: left;
+    line-height: 24px;
+    font-family: "HelveticaNeue-Thin","HelveticaNeue-Light",sans-serif;
+}
+/*SECTIONS*/
+#wrapper2 {
+    width: 1045px;
+    margin: 0 auto;
+}
+#wrapper3 {
+    width: 1045px;
+    margin: 0 auto;
+}
+#wrapper4 {
+    width: 1045px;
+    margin: 0 auto;
+}
+/*CLICK CIRCLES*/
+#clickCircles {
+    font-family: "HelveticaNeue-CondensedBold",sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    position: absolute; top: -80px; left: 408px;
+}
+#scrollDown {
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    color: rgb(150,150,150);
+    font-size: 24px;
+    position: relative; top: -30px;
+}
+/*CIRCLES' HEADERS*/
+#fiHeader, #chHeader {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+#fiSubheader, #chSubheader {
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    font-size: 27px;
+    color: rgb(150,150,150);
+    text-align: center;
+}
+#fiTitle {
+    position: absolute; left: 165px; top: 60px;
+}
+#chTitle {
+    position: absolute; left: 695px; top: 60px;
+}
+/*CHROMATIC CIRCLE*/
+#fifthsWrapper {
+    width: 480px;
+    height: 480px;
+    display: inline-block;
+    position: relative; right: 27px;
+    margin: -100px 0 -10px 0;
+}
+#fiReference {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.ficircles {
+    width:96px;
+    height:96px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	z-index: 1;
+}
+.ficircles p {
+    font-family:'HelveticaNeue-CondensedBlack',sans-serif;
+    color:#fff;
+    text-align:center;
+    padding-top:11px;
+    font-size:72px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}
+#fiReference a {
+    text-decoration: none;
+}
+#fiHollowCircle {
+    width:276px;
+    height:276px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    border-radius: 250px;
+    border: solid 104px;
+    border-color: white;
+    position: relative; right: 52px; bottom: 52px;
+}
+span {
+    font-size: 36px;
+}
+/*CIRCLE OF FIFTHS*/
+#chromWrapper {
+    width: 480px;
+    height: 480px;
+    display: inline-block;
+    position: relative; left: 27px;
+    margin: -100px 0 -10px 0;
+}
+#chReference {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.chcircles {
+    width:96px;
+    height:96px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	z-index: 1;
+}
+.chcircles p {
+    font-family:'HelveticaNeue-CondensedBlack',sans-serif;
+    color:#fff;
+    text-align:center;
+    padding-top:11px;
+    font-size:72px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+#chReference a {
+    text-decoration: none;
+}
+#chHollowCircle {
+    width:276px;
+    height:276px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    border-radius: 250px;
+    border: solid 104px;
+    border-color: white;
+    position: relative; right: 52px; bottom: 52px;
+}
+span {
+    font-size: 36px;
+}
+/*HARP GROUP*/
+#harpGroup {
+    width: 1024px;
+    position: relative; bottom: 50px;
+}
+/*HARP*/
+#uglyHarp {
+    width: 480px;
+    height: 480px;
+    vertical-align: middle;
+    position: relative; left: 4px;
+}
+/*GETERAL SPECIFICATIONS*/
+#lineLeftL, #lineLeftR, #lineRightL, #lineRightR {
+    width: 67px;
+    height: 3px;
+    background-color: white;
+}
+#ofLowestL, #ofLowestR {
+    font-family: "HelveticaNeue-UltraLight","HelveticaNeue-Thin",sans-serif;
+    font-size: 36px;
+    color: rgb(150,150,150);
+}
+#theL, #theR {
+    font-family: "HelveticaNeue-Light","HelveticaNeue-Thin",sans-serif;
+    font-size: 40px;
+}
+#fracDoubleTop {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 54px;
+    position: relative; bottom: 2px;
+}
+#fracDoubleBottom {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    font-size: 54px;
+    position: relative;
+}
+/*LEFT SIDE*/
+#leng {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    color: white;
+    vertical-align: middle;
+    position: relative; left: 50px;
+}
+#fracTopL {
+    font-size: 54px;
+    position: relative; bottom: 2px;
+}
+#fracLineL {
+    width: 50px;
+    height: 6px;
+    background-color: white;
+    position: relative;
+}
+#fracBottomL {
+    font-size: 54px;
+    position: relative;
+}
+#timesL {
+    font-size: 101px;
+    position: relative; bottom: 108px; left: 60px;
+}
+/*POSITION "THE" AND MIDDLE LINES FOR BOTH LEFT AND RIGHT*/
+#lineLeftL, #lineLeftR {
+    position: relative; bottom: 78px; right: 50px;
+}
+#theL, #theR {
+    position: relative; bottom: 100px; left: 30px;
+}
+#lineRightL, #lineRightR {
+    position: relative; bottom: 121px; left: 96px;
+}
+#lengL {
+    font-size: 59px;
+    position: relative; bottom: 100px; right: 25px;
+}
+/*POSITION "OF LOWEST STRING" FOR BOTH LEFT AND RIGHT*/
+#ofLowestL, #ofLowestR {
+    text-align: center;
+    position: relative; bottom: 80px; right: 60px;
+}
+/*RIGHT SIDE*/
+#freq {
+    font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+    color: white;
+    vertical-align: middle;
+    position: relative; left: 64px;
+}
+#fracTopR {
+    font-size: 54px;
+    position: relative; bottom: 2px;
+}
+#fracLineR {
+    width: 50px;
+    height: 6px;
+    background-color: white;
+    position: relative;
+}
+#fracBottomR {
+    font-size: 54px;
+    position: relative;
+}
+#timesR {
+    font-size: 101px;
+    position: relative; bottom: 108px; left: 60px;
+}
+#freqR {
+    font-size: 52px;
+    position: relative; bottom: 100px; right: 55px;
+}
+/*SOUND WAVES*/
+#emptyRow {
+    height: 100px;
+}
+#waveLine {
+    text-align: center;
+    width: 2px;
+    height: 100px;
+    background-color: white;
+}
+
+/*DESCRIPTION 2 and 3*/
+#description1 {
+    margin: 0 0 0 0;
+}
+#descriptionEmptyRow {
+    height: 50px;
+}
+#description2and3 {
+    width: 1045px;
+}
+#description2, #description3 {
+    text-align: center;
+    width: 452px;
+}
+#descriptionEmptyMiddle {
+    width: 111px;
+}
+#descriptionEmptySides {
+    width: 15px;
+}
+/*KEYBOARD*/
+#emptyKeyboard {
+    width: 5px;
+    height: 250px;
+}
+#intervalMarker {
+    margin: -50px 0 0 -28px;
+}
+
+
+
+
+
+  

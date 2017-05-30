@@ -14,3 +14,10 @@
 #velocity-slider {
   margin-top: 10px;
 }
+
+#light-slider .noUi-connect {
+  background: #9b4eca;
+}
+#velocity-slider .noUi-connect {
+  background: #9b4eca;
+}
