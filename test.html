@@ -1,3 +1,18 @@
 <script>
-  console.log('hello')
+
+var s = new WebSocket('ws://echo.websocket.org/')
+s.addEventListener('open', () => {
+  console.log('connected to server')
+  s.send(JSON.stringify('hello!'))
+})
+s.addEventListener('close', () => {
+      console.log('disconnected from server')
+})
+s.addEventListener('error', err => {
+  throw err
+})
+s.addEventListener('message', msg => {
+  console.log(JSON.parse(msg.data))
+})
+
 </script>
